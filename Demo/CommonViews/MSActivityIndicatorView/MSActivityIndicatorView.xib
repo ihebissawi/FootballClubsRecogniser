@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="j2q-2V-p2S" customClass="MSActivityIndicatorView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clK-Jq-ZPi" userLabel="BG Shadow View">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foto240x320_0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Jaf-G8-jog">
+                    <rect key="frame" x="40" y="104" width="240" height="320"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="DXf-NX-0vf"/>
+                        <constraint firstAttribute="height" priority="999" constant="320" id="jQo-nM-nbk"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="yXP-KD-Y35">
+                    <rect key="frame" x="20" y="328" width="280" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0078431372549019607" green="0.54509803921568623" blue="0.70980392156862748" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1kD-2K-JhD">
+                    <rect key="frame" x="150" y="353" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="color" red="0.0078431372550000003" green="0.5450980392" blue="0.70980392160000005" alpha="1" colorSpace="deviceRGB"/>
+                </activityIndicatorView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVd-GH-4kL">
+                    <rect key="frame" x="276" y="0.0" width="44" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.73333334922790527" green="0.0" blue="0.12941177189350128" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="E9q-I4-sZP"/>
+                        <constraint firstAttribute="height" constant="44" id="xn1-30-3m2"/>
+                    </constraints>
+                    <state key="normal" image="cancel">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="Jaf-G8-jog" secondAttribute="centerX" id="3WC-Lm-xlV"/>
+                <constraint firstItem="Jaf-G8-jog" firstAttribute="top" relation="greaterThanOrEqual" secondItem="j2q-2V-p2S" secondAttribute="top" id="4Ds-0f-MlO"/>
+                <constraint firstItem="yXP-KD-Y35" firstAttribute="leading" secondItem="j2q-2V-p2S" secondAttribute="leading" constant="20" id="ABq-3n-UWw"/>
+                <constraint firstItem="mVd-GH-4kL" firstAttribute="top" secondItem="j2q-2V-p2S" secondAttribute="top" id="KUM-ma-FUR"/>
+                <constraint firstAttribute="trailing" secondItem="mVd-GH-4kL" secondAttribute="trailing" id="Slg-MP-bdS"/>
+                <constraint firstAttribute="centerY" secondItem="yXP-KD-Y35" secondAttribute="centerY" constant="-54" id="ZB8-oD-amZ"/>
+                <constraint firstItem="clK-Jq-ZPi" firstAttribute="leading" secondItem="j2q-2V-p2S" secondAttribute="leading" id="cLd-IL-vfm"/>
+                <constraint firstAttribute="centerX" secondItem="1kD-2K-JhD" secondAttribute="centerX" id="cf2-if-Xtv"/>
+                <constraint firstItem="clK-Jq-ZPi" firstAttribute="top" secondItem="j2q-2V-p2S" secondAttribute="top" id="fSJ-gv-raA"/>
+                <constraint firstAttribute="bottom" secondItem="clK-Jq-ZPi" secondAttribute="bottom" id="hdS-0X-KHF"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Jaf-G8-jog" secondAttribute="bottom" id="kqN-7y-ifT"/>
+                <constraint firstAttribute="centerY" secondItem="Jaf-G8-jog" secondAttribute="centerY" constant="20" id="pzF-k1-aOP"/>
+                <constraint firstAttribute="trailing" secondItem="clK-Jq-ZPi" secondAttribute="trailing" id="sQ4-gy-WYL"/>
+                <constraint firstAttribute="centerY" secondItem="1kD-2K-JhD" secondAttribute="centerY" constant="-79" id="vlT-yb-VkQ"/>
+                <constraint firstAttribute="trailing" secondItem="yXP-KD-Y35" secondAttribute="trailing" constant="20" id="wCE-Wi-5hh"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="activityIndicator" destination="1kD-2K-JhD" id="Sa6-rX-g5r"/>
+                <outlet property="cancelButton" destination="mVd-GH-4kL" id="d5w-f3-59F"/>
+                <outlet property="imageView" destination="Jaf-G8-jog" id="TMt-Xx-riS"/>
+                <outlet property="messageLabel" destination="yXP-KD-Y35" id="363-vq-BtF"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancel" width="28" height="28"/>
+        <image name="foto240x320_0.jpg" width="240" height="320"/>
+    </resources>
+</document>

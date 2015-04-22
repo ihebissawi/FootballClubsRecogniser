@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="13F34" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="MSCountry" representedClassName="MSCountry" parentEntity="MSPerishableEntity" syncable="YES">
+        <attribute name="fileFlagID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="file_flag_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="flag" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="flag"/>
+            </userInfo>
+        </attribute>
+        <attribute name="iD" attributeType="String" indexed="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name"/>
+            </userInfo>
+        </attribute>
+        <relationship name="leagues" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MSLeague" inverseName="country" inverseEntity="MSLeague" syncable="YES"/>
+        <userInfo>
+            <entry key="relatedByAttribute" value="iD"/>
+        </userInfo>
+    </entity>
+    <entity name="MSLeague" representedClassName="MSLeague" parentEntity="MSPerishableEntity" syncable="YES">
+        <attribute name="iD" attributeType="String" indexed="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="shortName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name_short"/>
+            </userInfo>
+        </attribute>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MSCountry" inverseName="leagues" inverseEntity="MSCountry" syncable="YES"/>
+        <userInfo>
+            <entry key="relatedByAttribute" value="iD"/>
+        </userInfo>
+    </entity>
+    <entity name="MSLeagueTeamResult" representedClassName="MSLeagueTeamResult" parentEntity="MSPerishableEntity" syncable="YES">
+        <attribute name="draw" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="draw"/>
+            </userInfo>
+        </attribute>
+        <attribute name="goalsAgainst" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="goals_against"/>
+            </userInfo>
+        </attribute>
+        <attribute name="goalsFor" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="goals_for"/>
+            </userInfo>
+        </attribute>
+        <attribute name="iD" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="leagueID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="league_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="leagueName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="league_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="loose" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="loose"/>
+            </userInfo>
+        </attribute>
+        <attribute name="played" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="played"/>
+            </userInfo>
+        </attribute>
+        <attribute name="position" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="position"/>
+            </userInfo>
+        </attribute>
+        <attribute name="pts" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="pts"/>
+            </userInfo>
+        </attribute>
+        <attribute name="seasonID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="season_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="seasonName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="season_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="teamID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="team_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="teamName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="team_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="teamPlayedCountryName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="team_country_for"/>
+            </userInfo>
+        </attribute>
+        <attribute name="win" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="win"/>
+            </userInfo>
+        </attribute>
+        <userInfo>
+            <entry key="relatedByAttribute" value="iD"/>
+        </userInfo>
+    </entity>
+    <entity name="MSMatch" representedClassName="MSMatch" parentEntity="MSPerishableEntity" syncable="YES">
+        <attribute name="dateString" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="date"/>
+            </userInfo>
+        </attribute>
+        <attribute name="iD" attributeType="String" indexed="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="leagueID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="league_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="leagueName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="league_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="score" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="score"/>
+            </userInfo>
+        </attribute>
+        <attribute name="seasonID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="season_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="seasonName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="season_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="teamAwayID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="team_away_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="teamAwayName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="team_away_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="teamHomeID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="team_home_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="teamHomeName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="team_home_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="timestamp" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="timestamp"/>
+            </userInfo>
+        </attribute>
+        <relationship name="teamAway" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MSTeam" inverseName="awayMatches" inverseEntity="MSTeam" syncable="YES"/>
+        <relationship name="teamHome" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MSTeam" inverseName="homeMatches" inverseEntity="MSTeam" syncable="YES"/>
+        <userInfo>
+            <entry key="relatedByAttribute" value="iD"/>
+        </userInfo>
+    </entity>
+    <entity name="MSPerishableEntity" representedClassName="MSPerishableEntity" isAbstract="YES" syncable="YES">
+        <attribute name="imageFilePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUpdateDate" optional="YES" attributeType="Date" minDateTimeInterval="0" syncable="YES"/>
+    </entity>
+    <entity name="MSPlayer" representedClassName="MSPlayer" parentEntity="MSPerishableEntity" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="age"/>
+            </userInfo>
+        </attribute>
+        <attribute name="birth" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="birth"/>
+            </userInfo>
+        </attribute>
+        <attribute name="cityID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="city_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="cityName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="city_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="countryID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="country_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="countryName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="country_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="first_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="foot" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="foot"/>
+            </userInfo>
+        </attribute>
+        <attribute name="height" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="height"/>
+            </userInfo>
+        </attribute>
+        <attribute name="iD" attributeType="String" indexed="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="last_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="nameShort" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name_short"/>
+            </userInfo>
+        </attribute>
+        <attribute name="photoLink" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="photo"/>
+            </userInfo>
+        </attribute>
+        <attribute name="playsForCountryID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="plays_for_country_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="playsForTeamID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="plays_for_team_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="playsForTeamName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="plays_for_team"/>
+            </userInfo>
+        </attribute>
+        <attribute name="positionID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="position_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="positionName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="position_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="positionNameShort" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="position_name_short"/>
+            </userInfo>
+        </attribute>
+        <attribute name="shirtNumber" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="shirtnumber"/>
+            </userInfo>
+        </attribute>
+        <attribute name="urlLink" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="url"/>
+            </userInfo>
+        </attribute>
+        <attribute name="weight" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="weight"/>
+            </userInfo>
+        </attribute>
+        <relationship name="seasonsResults" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MSPlayerProgress" inverseName="player" inverseEntity="MSPlayerProgress" syncable="YES"/>
+        <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MSTeam" inverseName="squad" inverseEntity="MSTeam" syncable="YES"/>
+        <userInfo>
+            <entry key="relatedByAttribute" value="iD"/>
+        </userInfo>
+    </entity>
+    <entity name="MSPlayerProgress" representedClassName="MSPlayerProgress" parentEntity="MSPerishableEntity" syncable="YES">
+        <attribute name="appearances" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="appearances"/>
+            </userInfo>
+        </attribute>
+        <attribute name="goal" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="goal"/>
+            </userInfo>
+        </attribute>
+        <attribute name="iD" attributeType="String" indexed="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="leagueID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="league_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="leagueName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="league_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="playerID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="player_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="redCard" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="red_card"/>
+            </userInfo>
+        </attribute>
+        <attribute name="seasonID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="season_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="seasonName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="season_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="teamCountryNamePlayingFor" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="team_country_for"/>
+            </userInfo>
+        </attribute>
+        <attribute name="teamID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="team_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="teamName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="team_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="yellowCard" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="yellow_card"/>
+            </userInfo>
+        </attribute>
+        <relationship name="player" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MSPlayer" inverseName="seasonsResults" inverseEntity="MSPlayer" syncable="YES"/>
+        <userInfo>
+            <entry key="relatedByAttribute" value="iD"/>
+        </userInfo>
+    </entity>
+    <entity name="MSTeam" representedClassName="MSTeam" parentEntity="MSPerishableEntity" syncable="YES">
+        <attribute name="cityID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="city_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="cityName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="city_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="coach" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="coach"/>
+            </userInfo>
+        </attribute>
+        <attribute name="currentLeagueID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="current_league_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="currentLeagueName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="current_league"/>
+            </userInfo>
+        </attribute>
+        <attribute name="currentSeasonID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="current_season_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="currentSeasonName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="current_season"/>
+            </userInfo>
+        </attribute>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="email"/>
+            </userInfo>
+        </attribute>
+        <attribute name="favorite" optional="YES" attributeType="Boolean" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fax" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="fax"/>
+            </userInfo>
+        </attribute>
+        <attribute name="founded" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="founded"/>
+            </userInfo>
+        </attribute>
+        <attribute name="homeAddress" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="home_address"/>
+            </userInfo>
+        </attribute>
+        <attribute name="homeCountryID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="country_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="homeCountryName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="country_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="iD" attributeType="String" indexed="YES" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="logo" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="logo"/>
+            </userInfo>
+        </attribute>
+        <attribute name="matchesLastUpdateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="phone"/>
+            </userInfo>
+        </attribute>
+        <attribute name="playersLastUpdateDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="playingCountryID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="country_for_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="playingCountryName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="country_for_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="shortName" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="name_short"/>
+            </userInfo>
+        </attribute>
+        <attribute name="stadium" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="stadium"/>
+            </userInfo>
+        </attribute>
+        <attribute name="synced" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="teamColor" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="color"/>
+            </userInfo>
+        </attribute>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="url"/>
+            </userInfo>
+        </attribute>
+        <relationship name="awayMatches" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MSMatch" inverseName="teamAway" inverseEntity="MSMatch" syncable="YES"/>
+        <relationship name="homeMatches" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MSMatch" inverseName="teamHome" inverseEntity="MSMatch" syncable="YES"/>
+        <relationship name="squad" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MSPlayer" inverseName="team" inverseEntity="MSPlayer" syncable="YES"/>
+        <userInfo>
+            <entry key="relatedByAttribute" value="iD"/>
+        </userInfo>
+    </entity>
+    <elements>
+        <element name="MSCountry" positionX="0" positionY="0" width="128" height="120"/>
+        <element name="MSLeague" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="MSLeagueTeamResult" positionX="0" positionY="0" width="128" height="285"/>
+        <element name="MSMatch" positionX="0" positionY="0" width="128" height="253"/>
+        <element name="MSPerishableEntity" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="MSPlayer" positionX="0" positionY="0" width="128" height="405"/>
+        <element name="MSPlayerProgress" positionX="0" positionY="0" width="128" height="255"/>
+        <element name="MSTeam" positionX="0" positionY="0" width="128" height="493"/>
+    </elements>
+</model>

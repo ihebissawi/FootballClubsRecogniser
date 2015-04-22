@@ -1,0 +1,26 @@
+
+#import <Availability.h>
+
+#ifndef __IPHONE_6_0
+#warning "This project uses features only available in iOS SDK 6.0 and later."
+#endif
+
+#define APPSTORE 1
+
+#ifdef DEBUG
+    #define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+    #define DLog(...)
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "UIViewController+MSActivityIndicator.h"
+    #import "MSTypes.h"
+    #import "CoreData+MagicalRecord.h"
+    #import "MSDataManager.h"
+    #import "MSSettings.h"
+    #import "UIAlertView+MSExtensions.h"
+    #import "MSFlurryAnalytics.h"
+#endif

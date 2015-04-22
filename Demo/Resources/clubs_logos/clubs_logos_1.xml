@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="138" size="150.000000 150.000000" />
+    <ImageTarget name="44" size="150.000000 150.000000" />
+    <ImageTarget name="102" size="500.000000 592.000000" />
+    <ImageTarget name="116" size="500.000000 656.794434" />
+    <ImageTarget name="115" size="500.000000 500.000000" />
+    <ImageTarget name="114" size="500.000000 500.000000" />
+    <ImageTarget name="113" size="500.000000 569.000000" />
+    <ImageTarget name="112" size="500.000000 629.844971" />
+    <ImageTarget name="111" size="500.000000 417.000000" />
+    <ImageTarget name="110" size="500.000000 763.000000" />
+    <ImageTarget name="109" size="500.000000 500.000000" />
+    <ImageTarget name="108" size="500.000000 490.000000" />
+    <ImageTarget name="107" size="500.000000 500.000000" />
+    <ImageTarget name="106" size="500.000000 580.291992" />
+    <ImageTarget name="105" size="500.000000 489.082977" />
+    <ImageTarget name="104" size="500.000000 500.000000" />
+    <ImageTarget name="103" size="500.000000 472.000000" />
+    <ImageTarget name="101" size="500.000000 604.000000" />
+    <ImageTarget name="98" size="500.000000 813.000000" />
+    <ImageTarget name="97" size="500.000000 612.000000" />
+    <ImageTarget name="96" size="500.000000 500.000000" />
+    <ImageTarget name="95" size="500.000000 656.000000" />
+    <ImageTarget name="94" size="500.000000 440.000000" />
+    <ImageTarget name="93" size="500.000000 571.428589" />
+    <ImageTarget name="92" size="500.000000 533.000000" />
+    <ImageTarget name="91" size="500.000000 543.000000" />
+    <ImageTarget name="90" size="500.000000 557.103088" />
+    <ImageTarget name="89" size="500.000000 500.000000" />
+    <ImageTarget name="88" size="500.000000 650.000000" />
+    <ImageTarget name="87" size="500.000000 715.714294" />
+    <ImageTarget name="86" size="500.000000 634.000000" />
+    <ImageTarget name="85" size="500.000000 455.000000" />
+    <ImageTarget name="84" size="500.000000 506.000000" />
+    <ImageTarget name="83" size="500.000000 570.000000" />
+    <ImageTarget name="82" size="500.000000 504.000000" />
+    <ImageTarget name="81" size="500.000000 500.000000" />
+    <ImageTarget name="75" size="500.000000 637.000000" />
+    <ImageTarget name="74" size="500.000000 503.144653" />
+    <ImageTarget name="73" size="500.000000 500.000000" />
+    <ImageTarget name="72" size="500.000000 434.000000" />
+    <ImageTarget name="71" size="500.000000 483.333344" />
+    <ImageTarget name="70" size="500.000000 558.000000" />
+    <ImageTarget name="69" size="500.000000 436.000000" />
+    <ImageTarget name="68" size="500.000000 343.750000" />
+    <ImageTarget name="67" size="500.000000 581.000000" />
+    <ImageTarget name="66" size="500.000000 795.000000" />
+    <ImageTarget name="65" size="500.000000 655.601685" />
+    <ImageTarget name="64" size="500.000000 558.000000" />
+    <ImageTarget name="63" size="500.000000 501.000000" />
+    <ImageTarget name="62" size="500.000000 500.000000" />
+  </Tracking>
+</QCARConfig>
