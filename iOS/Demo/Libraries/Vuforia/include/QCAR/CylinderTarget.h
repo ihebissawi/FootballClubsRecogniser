@@ -10,11 +10,12 @@ and other countries. Trademarks of QUALCOMM Incorporated are used with permissio
 @brief
     Header file for CylinderTarget class.
 ===============================================================================*/
-#ifndef _QCAR_CylinderTarget_H_
-#define _QCAR_CylinderTarget_H_
+#ifndef _QCAR_CYLINDERTARGET_H_
+#define _QCAR_CYLINDERTARGET_H_
 
 // Include files
 #include <QCAR/Trackable.h>
+#include <QCAR/ObjectTarget.h>
 
 namespace QCAR
 {
@@ -27,7 +28,7 @@ namespace QCAR
  *  The object is always scaled uniformly, so changing any of its parameters 
  *  affects all others.
  */
-class QCAR_API CylinderTarget : public Trackable
+class QCAR_API CylinderTarget : public ObjectTarget
 {
 public:
 
@@ -60,18 +61,8 @@ public:
      *  Note that the height and top diameter will be scaled accordingly.
      */
     virtual bool setBottomDiameter(float bottomDiameter) = 0;
-
-    /// Returns the system-wide unique id of the target.
-    /**
-     *  The target id uniquely identifies an CylinderTarget across multiple
-     *  Vuforia sessions. The system wide unique id may be generated off-line.
-     *  This is opposed to the function getId() which is a dynamically
-     *  generated id and which uniquely identifies a Trackable within one run
-     *  of Vuforia only.
-     */
-    virtual const char* getUniqueTargetId() const = 0;
 };
 
 } // namespace QCAR
 
-#endif //_QCAR_CylinderTarget_H_
+#endif //_QCAR_CYLINDERTARGET_H_

@@ -34,8 +34,15 @@ enum INIT_FLAGS {
 
 /// Return codes for init() function
 enum {
-    INIT_ERROR = -1,                            ///< Error during initialization
-    INIT_DEVICE_NOT_SUPPORTED = -2,             ///< The device is not supported
+    INIT_ERROR = -1,                                ///< Error during initialization
+    INIT_DEVICE_NOT_SUPPORTED = -2,                 ///< The device is not supported
+    INIT_NO_CAMERA_ACCESS = -3,                     ///< Cannot access the camera
+    INIT_LICENSE_ERROR_MISSING_KEY = -4,            ///< License key is missing
+    INIT_LICENSE_ERROR_INVALID_KEY = -5,            ///< Invalid license key passed to SDK
+    INIT_LICENSE_ERROR_NO_NETWORK_PERMANENT = -6,   ///< Unable to verify license key due to network (Permanent error)
+    INIT_LICENSE_ERROR_NO_NETWORK_TRANSIENT = -7,   ///< Unable to verify license key due to network (Transient error)
+    INIT_LICENSE_ERROR_CANCELED_KEY = -8,           ///< Provided key is no longer valid
+    INIT_EXTERNAL_DEVICE_NOT_DETECTED = -9          ///< Dependent external device not detected/plugged in
 };
 
 
@@ -64,10 +71,33 @@ enum HINT {
     /**
      *  This hint tells the tracker how many image shall be processed
      *  at most at the same time. E.g. if an app will never require
-     *  tracking more than two targets this value should be set to 2.
+     *  tracking more than two targets, this value should be set to 2.
      *  Default is: 1.
      */
     HINT_MAX_SIMULTANEOUS_IMAGE_TARGETS = 0,
+
+    /// How many object targets to detect and track at the same time
+    /**
+    *  This hint tells the tracker how many 3D objects shall be processed
+    *  at most at the same time. E.g. if an app will never require
+    *  tracking more than 1 target, this value should be set to 1.
+    *  Default is: 1.
+    */
+    HINT_MAX_SIMULTANEOUS_OBJECT_TARGETS = 1,
+
+    /// Force delayed loading for object target Dataset
+    /**
+    *  This hint tells the tracker to enable/disable delayed loading 
+    *  of object target datasets upon first detection. 
+    *  Loading time of large object dataset will be reduced 
+    *  but the initial detection time of targets will increase.
+    *  Please note that the hint should be set before loading 
+    *  any object target dataset to be effective.
+    *  To enable delayed loading set the hint value to 1.
+    *  To disable delayed loading set the hint value to 0.
+    *  Default is: 0.
+    */
+    HINT_DELAYED_LOADING_OBJECT_DATASETS = 2,
 };
 
 /// Types of storage locations for datasets

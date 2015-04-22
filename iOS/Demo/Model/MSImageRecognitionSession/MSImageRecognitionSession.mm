@@ -17,7 +17,7 @@
 #import <QCAR/VideoBackgroundConfig.h>
 #import <QCAR/UpdateCallback.h>
 #import <QCAR/TrackerManager.h>
-#import <QCAR/ImageTracker.h>
+#import <QCAR/ObjectTracker.h>
 #import <QCAR/Trackable.h>
 #import <QCAR/DataSet.h>
 #import <QCAR/TrackableResult.h>
@@ -51,6 +51,7 @@ static inline void MSDispatchMain(void (^block)(void)) {
     dispatch_async(dispatch_get_main_queue(), block);
 }
 
+NSString * const MSImageRecognitionLicenseKey = @"a281245a565e4281ba99f86de60abe64";
 NSString * const MSImageRecognitionCloudAccessKey = @"MSImageRecognitionCloudAccessKey";
 NSString * const MSImageRecognitionCloudSecretKey = @"MSImageRecognitionCloudSecretKey";
 
@@ -157,7 +158,7 @@ NSString * const MSImageRecognitionCloudSecretKey = @"MSImageRecognitionCloudSec
     
     // Initialising QCAR is a potentially lengthy operation, so perform it on a background thread
     
-    QCAR::setInitParameters(MS_QCARInitFlags);
+    QCAR::setInitParameters(MS_QCARInitFlags, MSImageRecognitionLicenseKey.UTF8String);
     
     // QCAR::init() will return positive numbers up to 100 as it progresses towards success.  Negative numbers indicate error conditions
     NSInteger initSuccess = 0;
@@ -488,9 +489,9 @@ NSString * const MSImageRecognitionCloudSecretKey = @"MSImageRecognitionCloudSec
 - (BOOL)initTracker:(NSError **)error {
     NSParameterAssert(error);
     QCAR::TrackerManager& trackerManager = QCAR::TrackerManager::getInstance();
-    QCAR::Tracker*        trackerBase    = trackerManager.initTracker(QCAR::ImageTracker::getClassType());
+    QCAR::Tracker*        trackerBase    = trackerManager.initTracker(QCAR::ObjectTracker::getClassType());
     if (!trackerBase){
-        trackerBase = trackerManager.getTracker(QCAR::ImageTracker::getClassType());
+        trackerBase = trackerManager.getTracker(QCAR::ObjectTracker::getClassType());
     }
 
     if (!trackerBase) {
@@ -500,7 +501,7 @@ NSString * const MSImageRecognitionCloudSecretKey = @"MSImageRecognitionCloudSec
     }
     
     if(_isCloudRecognition) {
-        QCAR::TargetFinder* targetFinder = static_cast<QCAR::ImageTracker*>(trackerBase)->getTargetFinder();
+        QCAR::TargetFinder* targetFinder = static_cast<QCAR::ObjectTracker*>(trackerBase)->getTargetFinder();
         if (!targetFinder) {
             NSLog(@"Failed to get target finder.");
             *error = [self errorWithCode:E_INIT_TRACKERS];
@@ -514,19 +515,19 @@ NSString * const MSImageRecognitionCloudSecretKey = @"MSImageRecognitionCloudSec
 
 - (void)deinitTrackers {
     QCAR::TrackerManager& trackerManager = QCAR::TrackerManager::getInstance();
-    trackerManager.deinitTracker(QCAR::ImageTracker::getClassType());
+    trackerManager.deinitTracker(QCAR::ObjectTracker::getClassType());
 }
 
 - (BOOL)startTrackers {
     QCAR::TrackerManager& trackerManager = QCAR::TrackerManager::getInstance();
-    QCAR::Tracker* tracker = trackerManager.getTracker(QCAR::ImageTracker::getClassType());
+    QCAR::Tracker* tracker = trackerManager.getTracker(QCAR::ObjectTracker::getClassType());
     if(tracker == 0) {
         return NO;
     }
     tracker->start();
     
     if(_isCloudRecognition) {
-        QCAR::ImageTracker* imageTracker = static_cast<QCAR::ImageTracker*>(tracker);
+        QCAR::ObjectTracker* imageTracker = static_cast<QCAR::ObjectTracker*>(tracker);
         QCAR::TargetFinder* targetFinder = imageTracker->getTargetFinder();
         assert (targetFinder != 0);
         targetFinder->startRecognition();
@@ -537,7 +538,7 @@ NSString * const MSImageRecognitionCloudSecretKey = @"MSImageRecognitionCloudSec
 
 - (BOOL)stopTrackers {
     QCAR::TrackerManager& trackerManager = QCAR::TrackerManager::getInstance();
-    QCAR::ImageTracker* imageTracker = static_cast<QCAR::ImageTracker*>(trackerManager.getTracker(QCAR::ImageTracker::getClassType()));
+    QCAR::ObjectTracker* imageTracker = static_cast<QCAR::ObjectTracker*>(trackerManager.getTracker(QCAR::ObjectTracker::getClassType()));
     
     if (!imageTracker) {
         NSLog(@"ERROR: failed to get the tracker from the tracker manager");
@@ -560,7 +561,7 @@ NSString * const MSImageRecognitionCloudSecretKey = @"MSImageRecognitionCloudSec
 
 - (BOOL)loadCloudTrackerWithAccessKey:(NSString *)accessKey andPrivateKey:(NSString *)privateKey error:(NSError **)error {
     QCAR::TrackerManager& trackerManager = QCAR::TrackerManager::getInstance();
-    QCAR::ImageTracker* imageTracker = static_cast<QCAR::ImageTracker*>(trackerManager.getTracker(QCAR::ImageTracker::getClassType()));
+    QCAR::ObjectTracker* imageTracker = static_cast<QCAR::ObjectTracker*>(trackerManager.getTracker(QCAR::ObjectTracker::getClassType()));
     if (imageTracker == NULL) {
         NSLog(@">doLoadTrackersData>Failed to load tracking data set because the ImageTracker has not been initialized.");
         *error = [self errorWithCode:E_LOADING_TRACKERS_DATA];
@@ -615,7 +616,7 @@ NSString * const MSImageRecognitionCloudSecretKey = @"MSImageRecognitionCloudSec
     QCAR::DataSet * dataSet = NULL;
     
     QCAR::TrackerManager& trackerManager = QCAR::TrackerManager::getInstance();
-    QCAR::ImageTracker* imageTracker = static_cast<QCAR::ImageTracker*>(trackerManager.getTracker(QCAR::ImageTracker::getClassType()));
+    QCAR::ObjectTracker* imageTracker = static_cast<QCAR::ObjectTracker*>(trackerManager.getTracker(QCAR::ObjectTracker::getClassType()));
     
     if (NULL == imageTracker) {
         NSLog(@"ERROR: failed to get the ImageTracker from the tracker manager");
@@ -646,7 +647,7 @@ NSString * const MSImageRecognitionCloudSecretKey = @"MSImageRecognitionCloudSec
     
     // Get the image tracker:
     QCAR::TrackerManager& trackerManager = QCAR::TrackerManager::getInstance();
-    QCAR::ImageTracker* imageTracker = static_cast<QCAR::ImageTracker*>(trackerManager.getTracker(QCAR::ImageTracker::getClassType()));
+    QCAR::ObjectTracker* imageTracker = static_cast<QCAR::ObjectTracker*>(trackerManager.getTracker(QCAR::ObjectTracker::getClassType()));
     
     if (imageTracker == NULL) {
         NSLog(@"Failed to load tracking data set because the ImageTracker has not been initialized.");
@@ -667,7 +668,7 @@ NSString * const MSImageRecognitionCloudSecretKey = @"MSImageRecognitionCloudSec
 - (BOOL)deactivateDataSets {
     // Get the image tracker:
     QCAR::TrackerManager& trackerManager = QCAR::TrackerManager::getInstance();
-    QCAR::ImageTracker*   imageTracker   = static_cast<QCAR::ImageTracker*>(trackerManager.getTracker(QCAR::ImageTracker::getClassType()));
+    QCAR::ObjectTracker*   imageTracker   = static_cast<QCAR::ObjectTracker*>(trackerManager.getTracker(QCAR::ObjectTracker::getClassType()));
     if (imageTracker == NULL) {
         NSLog(@"Failed to unload tracking data set because the ImageTracker has not been initialized.");
         return NO;
@@ -900,7 +901,7 @@ NSString * const MSImageRecognitionCloudSecretKey = @"MSImageRecognitionCloudSec
 - (void) QCAR_onUpdate:(QCAR::State *) state {
     if(_isCloudRecognition) {
         QCAR::TrackerManager& trackerManager = QCAR::TrackerManager::getInstance();
-        QCAR::ImageTracker* imageTracker = static_cast<QCAR::ImageTracker*>(trackerManager.getTracker(QCAR::ImageTracker::getClassType()));
+        QCAR::ObjectTracker* imageTracker = static_cast<QCAR::ObjectTracker*>(trackerManager.getTracker(QCAR::ObjectTracker::getClassType()));
         QCAR::TargetFinder* finder = imageTracker->getTargetFinder();
         
         // Check if there are new results available:

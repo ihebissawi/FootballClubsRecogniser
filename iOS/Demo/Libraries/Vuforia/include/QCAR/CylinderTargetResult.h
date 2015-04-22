@@ -14,14 +14,14 @@ and other countries. Trademarks of QUALCOMM Incorporated are used with permissio
 #define _QCAR_CYLINDERTARGETRESULT_H_
 
 // Include files
-#include <QCAR/TrackableResult.h>
+#include <QCAR/ObjectTargetResult.h>
 #include <QCAR/CylinderTarget.h>
 
 namespace QCAR
 {
 
 /// Result for a CylinderTarget.
-class QCAR_API CylinderTargetResult : public TrackableResult
+class QCAR_API CylinderTargetResult : public ObjectTargetResult
 {
 public:
 

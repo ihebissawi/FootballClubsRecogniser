@@ -15,7 +15,9 @@ and other countries. Trademarks of QUALCOMM Incorporated are used with permissio
 
 // Include files
 #include <QCAR/Trackable.h>
+#include <QCAR/ObjectTarget.h>
 #include <QCAR/Vectors.h>
+
 
 namespace QCAR
 {
@@ -30,33 +32,12 @@ class VirtualButton;
  *  corresponding DataSet is active. The dataset must be deactivated first
  *  before reconfiguring an ImageTarget.
  */
-class QCAR_API ImageTarget : public Trackable
+class QCAR_API ImageTarget : public ObjectTarget
 {
 public:
 
     /// Returns the Trackable class' type
     static Type getClassType();
-
-    /// Returns the system-wide unique id of the target.
-    /**
-     *  The target id uniquely identifies an ImageTarget across multiple
-     *  Vuforia sessions. The system wide unique id may be generated off-line.
-     *  This is opposed to the function getId() which is a dynamically
-     *  generated id and which uniquely identifies a Trackable within one run
-     *  of Vuforia only.
-     */
-    virtual const char* getUniqueTargetId() const = 0;
-
-    /// Returns the size (width and height) of the target (in 3D scene units).
-    virtual Vec2F getSize() const = 0;
-
-    /// Set the size (width and height) of the target (in 3D scene units).
-    /**
-     *  The dataset this ImageTarget belongs to must not be active when calling
-     *  this function or it will fail. Returns true if the size was set
-     *  successfully, false otherwise.
-     */
-    virtual bool setSize(const Vec2F& size) = 0;
 
     /// Returns the number of virtual buttons defined for this ImageTarget.
     virtual int getNumVirtualButtons() const = 0;

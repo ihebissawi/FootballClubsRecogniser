@@ -14,14 +14,14 @@ and other countries. Trademarks of QUALCOMM Incorporated are used with permissio
 #define _QCAR_MULTITARGETRESULT_H_
 
 // Include files
-#include <QCAR/TrackableResult.h>
+#include <QCAR/ObjectTargetResult.h>
 #include <QCAR/MultiTarget.h>
 
 namespace QCAR
 {
 
 /// Result for a MultiTarget.
-class QCAR_API MultiTargetResult : public TrackableResult
+class QCAR_API MultiTargetResult : public ObjectTargetResult
 {
 public:
 

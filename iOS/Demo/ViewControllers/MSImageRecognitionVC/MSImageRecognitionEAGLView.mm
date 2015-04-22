@@ -144,12 +144,13 @@
 // the screen.
 //
 // *** QCAR will call this method periodically on a background thread ***
+#warning FIXME: glClear sometimes crash application
 - (void)renderFrameQCAR {
     [self setFramebuffer];
     
     // Clear colour and depth buffers
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    
+	
     // Render video background and retrieve tracking state
     QCAR::State state = QCAR::Renderer::getInstance().begin();
     QCAR::Renderer::getInstance().drawVideoBackground();

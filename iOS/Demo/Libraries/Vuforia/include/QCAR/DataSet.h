@@ -30,11 +30,11 @@ class TrackableSource;
 /**
  *  A dataset may contain multiple ImageTargets and MultiTargets.
  *  An empty DataSet instance is created using the DataSet factory function
- *  provided by the ImageTracker class. The dataset is then loaded given a
+ *  provided by the ObjectTracker class. The dataset is then loaded given a
  *  dataset XML and corresponding dataset DAT file. The dataset may be loaded
  *  from the storage locations defined below. Note that the root filename of the
  *  dataset DAT file and XML file must be the same. Once loaded the dataset can
- *  be activated using ImageTracker::activateDataSet().
+ *  be activated using ObjectTracker::activateDataSet().
  *  Methods to modify a DataSet must not be called while it is active. The
  *  DataSet must be deactivated first before reconfiguring it.
  */

@@ -14,7 +14,7 @@ and other countries. Trademarks of QUALCOMM Incorporated are used with permissio
 #define _QCAR_IMAGETARGETRESULT_H_
 
 // Include files
-#include <QCAR/TrackableResult.h>
+#include <QCAR/ObjectTargetResult.h>
 #include <QCAR/ImageTarget.h>
 
 namespace QCAR
@@ -24,7 +24,7 @@ namespace QCAR
 class VirtualButtonResult;
 
 /// Result for an ImageTarget.
-class QCAR_API ImageTargetResult : public TrackableResult
+class QCAR_API ImageTargetResult : public ObjectTargetResult
 {
 public:
 

@@ -77,7 +77,7 @@ public:
      *  object is valid. Do not keep a copy of the pointer!
      */
     const TrackableResult* getTrackableResult(int idx) const;
-    
+
 protected:
     StateData* mData;
 

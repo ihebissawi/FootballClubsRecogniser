@@ -32,7 +32,7 @@ enum IOS_INIT_FLAGS {
  applicable flags.
  Returns an integer (0 on success).
  */
-int QCAR_API setInitParameters(int flags);
+int QCAR_API setInitParameters(int flags, const char* licenseKey);
    
 
 /// Sets the current rotation to be applied to the projection and background
