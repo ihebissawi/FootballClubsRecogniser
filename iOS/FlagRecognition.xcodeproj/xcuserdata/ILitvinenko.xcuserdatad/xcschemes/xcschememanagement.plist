@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>FlagRecognition Today Extension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>FlagRecognition WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>FlagRecognition.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -19,6 +29,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>Notification - FlagRecognition WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -28,6 +43,16 @@
 			<true/>
 		</dict>
 		<key>84D5FFDE18A41F1F0018BAFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD8B3BEE1AC58AB50013862E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD8B3C081AC58AEE0013862E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

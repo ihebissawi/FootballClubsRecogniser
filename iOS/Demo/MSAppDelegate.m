@@ -94,7 +94,7 @@
 	{
 		NSInteger number = [[[NSUserDefaults standardUserDefaults] objectForKey:@"badge"] intValue] + 1;
 		[[UIApplication sharedApplication] setApplicationIconBadgeNumber:number];
-		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:number] forKey:@"badge"];
+		[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:number] forKey:@"badge"];
 		if ([userInfo objectForKey:@"text"] != nil)
 		{
 			NSMutableArray *array = [[[NSUserDefaults standardUserDefaults] objectForKey:@"dates"] mutableCopy];

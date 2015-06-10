@@ -381,7 +381,7 @@
 
 -(void)requestLastMatchesForFavoriteTeamsForceUpdateFromServer:(BOOL)forceUpdateFromServer withCompletion:(MSCompletionBlockWithData)completion
 {
-	NSArray *resultArray = nil;
+//	NSArray *resultArray = nil;
 //	MSMatch *randomMatch = [MSMatch MR_findFirst];
 //	if ([self isValidDataInManagedObject:randomTeam] && !forceUpdateFromServer)
 //	{
@@ -417,7 +417,7 @@
 
 #pragma mark - Notification
 
-- (void)rehcabilityChangedNotification:(NSNotification*)notification
+- (void)rechabilityChangedNotification:(NSNotification*)notification
 {
 	AFNetworkReachabilityStatus status = [[notification object] integerValue];
 	if (status == AFNetworkReachabilityStatusReachableViaWWAN || status == AFNetworkReachabilityStatusReachableViaWiFi)

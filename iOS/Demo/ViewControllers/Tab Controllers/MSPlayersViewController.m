@@ -119,7 +119,7 @@ static const float MSSearchDelay     = 1.5;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"ROW :%d",indexPath.row);
+    NSLog(@"ROW :%ld",(long)indexPath.row);
     if([self isLoadingCell:indexPath inTableView:tableView]) {
         MSLoadingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[MSLoadingTableViewCell MS_reuseIdentifier]];
         return cell;

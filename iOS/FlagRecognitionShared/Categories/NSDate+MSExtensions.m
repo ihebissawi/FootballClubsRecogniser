@@ -55,9 +55,9 @@ NSDate *dateFromFullComponents(NSInteger day, NSInteger month, NSInteger year, N
 }
 
 NSDateComponents *componentsFromDate(NSDate *date) {
-    unsigned unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit |
-                         NSDayCalendarUnit | NSHourCalendarUnit |
-                         NSMinuteCalendarUnit | NSSecondCalendarUnit;
+    unsigned unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth |
+                         NSCalendarUnitDay | NSCalendarUnitHour |
+                         NSCalendarUnitMinute | NSCalendarUnitSecond;
     NSCalendar * cal = [NSCalendar currentCalendar];
     
     NSDateComponents *components = [cal components:unitFlags fromDate:date];

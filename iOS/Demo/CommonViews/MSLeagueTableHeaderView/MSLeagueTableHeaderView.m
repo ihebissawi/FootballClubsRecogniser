@@ -56,7 +56,7 @@
 - (void)updateUI {
     UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
     
-    self.additionalInfoViewWidth.constant = (UIDeviceOrientationIsLandscape(orientation)) ? kMSAdditionalViewLandscapeWidth :  kMSAdditionalViewPortraitWidth;
+    self.additionalInfoViewWidth.constant = UIInterfaceOrientationIsLandscape(orientation) ? kMSAdditionalViewLandscapeWidth :  kMSAdditionalViewPortraitWidth;
     
     [self layoutIfNeeded];
 }

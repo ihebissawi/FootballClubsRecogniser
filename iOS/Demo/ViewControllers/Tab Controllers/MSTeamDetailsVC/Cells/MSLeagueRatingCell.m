@@ -56,7 +56,7 @@
 
     UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
     
-    if (UIDeviceOrientationIsLandscape(orientation)) {
+    if (UIInterfaceOrientationIsLandscape(orientation)) {
         self.additionalInfoViewWidth.constant = kMSAdditionalViewLandscapeWidth;
         self.wLabel.text = result.win;
         self.dLabel.text = result.draw;

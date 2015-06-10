@@ -2002,7 +2002,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MS;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "DataArt Solutions, Inc.";
 				TargetAttributes = {
 					82A16596149907C100B8AEB4 = {
@@ -2202,7 +2202,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run 3ad97d7e5de4b32190741cf4e53bb5bbbe778d61 73dc157823c7ab82401bd230802f46179c1f73b45ec76dc1d626eaa220f8f905";
+			shellScript = "./Fabric.framework/run b4c683488a7071b429c503b2f3191733d01d9f47 748ed3e13fa78b7d612d1012dd984b2b327b7bb93ca04d10eddec5d34b74afc9";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2533,6 +2533,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -2571,6 +2572,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
@@ -2596,8 +2598,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = FlagsRecognizer.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Alexander Peresadchenko (9EK358VTMD)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alexander Peresadchenko (9EK358VTMD)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -2627,7 +2629,7 @@
 				);
 				PRODUCT_NAME = FlagsRecognizer;
 				PROVISIONING_PROFILE = "6c6e66bc-bd5b-4f92-9c83-fb8856ec954e";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6c6e66bc-bd5b-4f92-9c83-fb8856ec954e";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -2672,7 +2674,7 @@
 				);
 				PRODUCT_NAME = FlagsRecognizer;
 				PROVISIONING_PROFILE = "bb190a7b-5b5d-4387-8056-fb08b322e7c4";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "bb190a7b-5b5d-4387-8056-fb08b322e7c4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
