@@ -38,6 +38,7 @@ extern const struct MSTeamRelationships {
 	__unsafe_unretained NSString *awayMatches;
 	__unsafe_unretained NSString *homeMatches;
 	__unsafe_unretained NSString *squad;
+    __unsafe_unretained NSString *teamEvents;
 } MSTeamRelationships;
 
 extern const struct MSTeamUserInfo {
@@ -47,6 +48,7 @@ extern const struct MSTeamUserInfo {
 @class MSMatch;
 @class MSMatch;
 @class MSPlayer;
+@class MSEvent;
 
 @interface MSTeamID : MSPerishableEntityID {}
 @end
@@ -185,6 +187,8 @@ extern const struct MSTeamUserInfo {
 
 - (NSMutableSet*)squadSet;
 
+@property (nonatomic, retain) NSSet *teamEvents;
+
 @end
 
 @interface _MSTeam (AwayMatchesCoreDataGeneratedAccessors)
@@ -210,6 +214,14 @@ extern const struct MSTeamUserInfo {
 - (void)removeSquadObject:(MSPlayer*)value_;
 
 @end
+
+@interface _MSTeam (TeamEventsCoreDataGeneratedAccessors)
+- (void)addTeamEventsObject:(MSEvent *)value;
+- (void)removeTeamEventsObject:(MSEvent *)value;
+- (void)addTeamEvents:(NSSet *)values;
+- (void)removeTeamEvents:(NSSet *)values;
+@end
+
 
 @interface _MSTeam (CoreDataGeneratedPrimitiveAccessors)
 
@@ -308,5 +320,8 @@ extern const struct MSTeamUserInfo {
 
 - (NSMutableSet*)primitiveSquad;
 - (void)setPrimitiveSquad:(NSMutableSet*)value;
+
+- (NSMutableSet*)primitiveTeamEvents;
+- (void)setPrimitiveTeamEvents:(NSMutableSet*)value;
 
 @end

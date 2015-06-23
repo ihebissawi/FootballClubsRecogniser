@@ -21,6 +21,7 @@ const struct MSMatchAttributes MSMatchAttributes = {
 const struct MSMatchRelationships MSMatchRelationships = {
 	.teamAway = @"teamAway",
 	.teamHome = @"teamHome",
+    .matchEvents = @"matchEvents"
 };
 
 const struct MSMatchUserInfo MSMatchUserInfo = {
@@ -83,6 +84,8 @@ const struct MSMatchUserInfo MSMatchUserInfo = {
 @dynamic teamAway;
 
 @dynamic teamHome;
+
+@dynamic matchEvents;
 
 @end
 

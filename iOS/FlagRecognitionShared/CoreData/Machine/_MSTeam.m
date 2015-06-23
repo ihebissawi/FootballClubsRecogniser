@@ -37,6 +37,7 @@ const struct MSTeamRelationships MSTeamRelationships = {
 	.awayMatches = @"awayMatches",
 	.homeMatches = @"homeMatches",
 	.squad = @"squad",
+    .teamEvents = @"teamEvents"
 };
 
 const struct MSTeamUserInfo MSTeamUserInfo = {
@@ -205,6 +206,8 @@ const struct MSTeamUserInfo MSTeamUserInfo = {
 	[self didAccessValueForKey:@"squad"];
 	return result;
 }
+
+@dynamic teamEvents;
 
 @end
 

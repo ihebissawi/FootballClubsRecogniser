@@ -31,6 +31,7 @@ const struct MSPlayerAttributes MSPlayerAttributes = {
 const struct MSPlayerRelationships MSPlayerRelationships = {
 	.seasonsResults = @"seasonsResults",
 	.team = @"team",
+    .playerEvents = @"playerEvents"
 };
 
 const struct MSPlayerUserInfo MSPlayerUserInfo = {
@@ -122,6 +123,8 @@ const struct MSPlayerUserInfo MSPlayerUserInfo = {
 }
 
 @dynamic team;
+
+@dynamic playerEvents;
 
 @end
 

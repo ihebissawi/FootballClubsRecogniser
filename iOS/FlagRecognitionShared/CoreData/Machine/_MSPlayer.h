@@ -32,6 +32,7 @@ extern const struct MSPlayerAttributes {
 extern const struct MSPlayerRelationships {
 	__unsafe_unretained NSString *seasonsResults;
 	__unsafe_unretained NSString *team;
+    __unsafe_unretained NSString *playerEvents;
 } MSPlayerRelationships;
 
 extern const struct MSPlayerUserInfo {
@@ -40,6 +41,7 @@ extern const struct MSPlayerUserInfo {
 
 @class MSPlayerProgress;
 @class MSTeam;
+@class MSEvent;
 
 @interface MSPlayerID : MSPerishableEntityID {}
 @end
@@ -144,6 +146,9 @@ extern const struct MSPlayerUserInfo {
 
 @property (nonatomic, strong) MSTeam *team;
 
+@property (nonatomic, strong) NSSet* playerEvents;
+
+
 //- (BOOL)validateTeam:(id*)value_ error:(NSError**)error_;
 
 @end
@@ -153,6 +158,13 @@ extern const struct MSPlayerUserInfo {
 - (void)removeSeasonsResults:(NSSet*)value_;
 - (void)addSeasonsResultsObject:(MSPlayerProgress*)value_;
 - (void)removeSeasonsResultsObject:(MSPlayerProgress*)value_;
+@end
+
+@interface _MSPlayer (PlayerEventsCoreDataGeneratedAccessors)
+- (void)addPlayerEventsObject:(MSEvent *)value;
+- (void)removePlayerEventsObject:(MSEvent *)value;
+- (void)addPlayerEvents:(NSSet *)values;
+- (void)removePlayerEvents:(NSSet *)values;
 
 @end
 
@@ -227,7 +239,12 @@ extern const struct MSPlayerUserInfo {
 - (NSMutableSet*)primitiveSeasonsResults;
 - (void)setPrimitiveSeasonsResults:(NSMutableSet*)value;
 
+- (NSMutableSet*)primitivePlayerEvents;
+- (void)setPrimitivePlayerEvents:(NSMutableSet*)value;
+
 - (MSTeam*)primitiveTeam;
 - (void)setPrimitiveTeam:(MSTeam*)value;
+
+
 
 @end

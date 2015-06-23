@@ -22,6 +22,7 @@ extern const struct MSMatchAttributes {
 extern const struct MSMatchRelationships {
 	__unsafe_unretained NSString *teamAway;
 	__unsafe_unretained NSString *teamHome;
+    __unsafe_unretained NSString *matchEvents;
 } MSMatchRelationships;
 
 extern const struct MSMatchUserInfo {
@@ -29,7 +30,7 @@ extern const struct MSMatchUserInfo {
 } MSMatchUserInfo;
 
 @class MSTeam;
-@class MSTeam;
+@class MSEvent;
 
 @interface MSMatchID : MSPerishableEntityID {}
 @end
@@ -96,6 +97,17 @@ extern const struct MSMatchUserInfo {
 
 //- (BOOL)validateTeamHome:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, retain) NSSet *matchEvents;
+
+@end
+
+@interface _MSMatch (MatchEventsCoreDataGeneratedAccessors)
+
+- (void)addMatchEventsObject:(MSEvent *)value;
+- (void)removeMatchEventsObject:(MSEvent *)value;
+- (void)addMatchEvents:(NSSet *)values;
+- (void)removeMatchEvents:(NSSet *)values;
+
 @end
 
 @interface _MSMatch (CoreDataGeneratedPrimitiveAccessors)
@@ -141,5 +153,9 @@ extern const struct MSMatchUserInfo {
 
 - (MSTeam*)primitiveTeamHome;
 - (void)setPrimitiveTeamHome:(MSTeam*)value;
+
+- (NSMutableSet*)primitiveMatchEvents;
+- (void)setPrimitiveMatchEvents:(NSMutableSet*)value;
+
 
 @end

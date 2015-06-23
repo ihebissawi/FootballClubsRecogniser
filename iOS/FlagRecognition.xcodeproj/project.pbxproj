@@ -93,6 +93,15 @@
 		5F67D57818DCA74800195524 /* footballGrass.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F67D57718DCA74800195524 /* footballGrass.png */; };
 		790F7D8D15DD4364007C45F8 /* DB_JSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = 790F7D8C15DD4364007C45F8 /* DB_JSON.txt */; };
 		790F7D8F15DE277B007C45F8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790F7D8E15DE277B007C45F8 /* CoreData.framework */; };
+		7F37B0891B39696F0082E1ED /* _MSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F37B0881B39696F0082E1ED /* _MSEvent.m */; };
+		7F37B08A1B39696F0082E1ED /* _MSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F37B0881B39696F0082E1ED /* _MSEvent.m */; };
+		7F37B08B1B39696F0082E1ED /* _MSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F37B0881B39696F0082E1ED /* _MSEvent.m */; };
+		7FD14E5C1B3436C20000ECA5 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD14E5A1B3436C20000ECA5 /* Fabric.framework */; };
+		7FD14E5D1B3436C20000ECA5 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD14E5A1B3436C20000ECA5 /* Fabric.framework */; };
+		7FD14E5E1B3436C20000ECA5 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD14E5A1B3436C20000ECA5 /* Fabric.framework */; };
+		7FD14E5F1B3436C20000ECA5 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD14E5B1B3436C20000ECA5 /* Crashlytics.framework */; };
+		7FD14E601B3436C20000ECA5 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD14E5B1B3436C20000ECA5 /* Crashlytics.framework */; };
+		7FD14E611B3436C20000ECA5 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD14E5B1B3436C20000ECA5 /* Crashlytics.framework */; };
 		822B28D814991AC0001A7DD1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822B28D714991AC0001A7DD1 /* QuartzCore.framework */; };
 		822B28DC14991ADC001A7DD1 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822B28DB14991ADC001A7DD1 /* CoreVideo.framework */; };
 		822B28DE14991AEF001A7DD1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822B28DD14991AEF001A7DD1 /* CoreMedia.framework */; };
@@ -153,12 +162,6 @@
 		96595EB41A31D106006239B1 /* MSColorScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 96595EB31A31D106006239B1 /* MSColorScheme.m */; };
 		96595EB71A31EECC006239B1 /* MSFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96595EB61A31EECC006239B1 /* MSFilterView.m */; };
 		96595EB91A31EEDD006239B1 /* MSFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96595EB81A31EEDD006239B1 /* MSFilterView.xib */; };
-		CD34E92C1AD6940E0026270E /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD34E9281AD6940E0026270E /* Crashlytics.framework */; };
-		CD34E92D1AD6940E0026270E /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD34E9281AD6940E0026270E /* Crashlytics.framework */; };
-		CD34E92E1AD6940F0026270E /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD34E9281AD6940E0026270E /* Crashlytics.framework */; };
-		CD34E92F1AD6940F0026270E /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD34E9291AD6940E0026270E /* Fabric.framework */; };
-		CD34E9301AD6940F0026270E /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD34E9291AD6940E0026270E /* Fabric.framework */; };
-		CD34E9311AD6940F0026270E /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD34E9291AD6940E0026270E /* Fabric.framework */; };
 		CD34E9321AD6940F0026270E /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD34E92A1AD6940E0026270E /* libc++.dylib */; };
 		CD34E9331AD6940F0026270E /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD34E92A1AD6940E0026270E /* libc++.dylib */; };
 		CD34E9341AD6940F0026270E /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD34E92A1AD6940E0026270E /* libc++.dylib */; };
@@ -521,6 +524,10 @@
 		5F67D57718DCA74800195524 /* footballGrass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footballGrass.png; sourceTree = "<group>"; };
 		790F7D8C15DD4364007C45F8 /* DB_JSON.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DB_JSON.txt; sourceTree = "<group>"; };
 		790F7D8E15DE277B007C45F8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7F37B0871B39696F0082E1ED /* _MSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _MSEvent.h; path = ../../../_MSEvent.h; sourceTree = "<group>"; };
+		7F37B0881B39696F0082E1ED /* _MSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _MSEvent.m; path = ../../../_MSEvent.m; sourceTree = "<group>"; };
+		7FD14E5A1B3436C20000ECA5 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		7FD14E5B1B3436C20000ECA5 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		822B28D514991AAD001A7DD1 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		822B28D714991AC0001A7DD1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		822B28D914991ACF001A7DD1 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -873,7 +880,6 @@
 				963473581A2F3CC800A2D8D2 /* libstdc++.6.0.9.dylib in Frameworks */,
 				CD34E9351AD6940F0026270E /* libz.dylib in Frameworks */,
 				576E2E7A18C87E2D00694544 /* GLKit.framework in Frameworks */,
-				CD34E92F1AD6940F0026270E /* Fabric.framework in Frameworks */,
 				9634734D1A2F3C1D00A2D8D2 /* libVuforia.a in Frameworks */,
 				576E2E7818C87E1D00694544 /* OpenGLES.framework in Frameworks */,
 				576E2E7618C87E1400694544 /* CoreMotion.framework in Frameworks */,
@@ -881,8 +887,9 @@
 				8AB831571A3F1689003F2F55 /* libFlurry_5.4.0.a in Frameworks */,
 				844B4E4D178EA643000ABD58 /* MobileCoreServices.framework in Frameworks */,
 				844B4E4B178EA63C000ABD58 /* SystemConfiguration.framework in Frameworks */,
-				CD34E92C1AD6940E0026270E /* Crashlytics.framework in Frameworks */,
+				7FD14E5C1B3436C20000ECA5 /* Fabric.framework in Frameworks */,
 				790F7D8F15DE277B007C45F8 /* CoreData.framework in Frameworks */,
+				7FD14E5F1B3436C20000ECA5 /* Crashlytics.framework in Frameworks */,
 				822B28E014991AFF001A7DD1 /* AVFoundation.framework in Frameworks */,
 				CD34E9321AD6940F0026270E /* libc++.dylib in Frameworks */,
 				822B28DE14991AEF001A7DD1 /* CoreMedia.framework in Frameworks */,
@@ -897,10 +904,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD34E92D1AD6940E0026270E /* Crashlytics.framework in Frameworks */,
 				CD34E9361AD6940F0026270E /* libz.dylib in Frameworks */,
 				CD34E9331AD6940F0026270E /* libc++.dylib in Frameworks */,
-				CD34E9301AD6940F0026270E /* Fabric.framework in Frameworks */,
+				7FD14E601B3436C20000ECA5 /* Crashlytics.framework in Frameworks */,
+				7FD14E5D1B3436C20000ECA5 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -908,11 +915,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD34E92E1AD6940F0026270E /* Crashlytics.framework in Frameworks */,
 				CD34E9371AD6940F0026270E /* libz.dylib in Frameworks */,
+				7FD14E611B3436C20000ECA5 /* Crashlytics.framework in Frameworks */,
 				CD8B3C0B1AC58AEE0013862E /* NotificationCenter.framework in Frameworks */,
 				CD34E9341AD6940F0026270E /* libc++.dylib in Frameworks */,
-				CD34E9311AD6940F0026270E /* Fabric.framework in Frameworks */,
+				7FD14E5E1B3436C20000ECA5 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1121,6 +1128,8 @@
 		82A1658C149907C100B8AEB4 = {
 			isa = PBXGroup;
 			children = (
+				7FD14E5A1B3436C20000ECA5 /* Fabric.framework */,
+				7FD14E5B1B3436C20000ECA5 /* Crashlytics.framework */,
 				82A165A1149907C200B8AEB4 /* Demo */,
 				84D5FFFD18A42E9B0018BAFE /* Libraries */,
 				CD8B3BE11AC58AB50013862E /* FlagRecognition WatchKit Extension */,
@@ -1572,6 +1581,8 @@
 		CD7FA5631ACEAF63005D2E2C /* Machine */ = {
 			isa = PBXGroup;
 			children = (
+				7F37B0871B39696F0082E1ED /* _MSEvent.h */,
+				7F37B0881B39696F0082E1ED /* _MSEvent.m */,
 				CD7FA5641ACEAF63005D2E2C /* _MSCountry.h */,
 				CD7FA5651ACEAF63005D2E2C /* _MSCountry.m */,
 				CD7FA5661ACEAF63005D2E2C /* _MSLeague.h */,
@@ -2202,7 +2213,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run b4c683488a7071b429c503b2f3191733d01d9f47 748ed3e13fa78b7d612d1012dd984b2b327b7bb93ca04d10eddec5d34b74afc9";
+			shellScript = "./Fabric.framework/run 739ea3beb4071c53acef5de03f2fe30f3995020e c2a6e0102bbe7069ca4a69461c95caeeb0d242d6909ee3015346c81dc63f5e9c";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2314,6 +2325,7 @@
 				CD7FA66B1ACEAF63005D2E2C /* NSNumber+MagicalDataImport.m in Sources */,
 				CD7FA6051ACEAF63005D2E2C /* MSPlayerProgress.m in Sources */,
 				CD7FA5F31ACEAF63005D2E2C /* MSCountry.m in Sources */,
+				7F37B0891B39696F0082E1ED /* _MSEvent.m in Sources */,
 				CD7FA60B1ACEAF63005D2E2C /* _MSCountry.m in Sources */,
 				CD7FA61A1ACEAF63005D2E2C /* _MSPlayer.m in Sources */,
 				CD7FA69B1ACEAF63005D2E2C /* MagicalRecord+Actions.m in Sources */,
@@ -2398,6 +2410,7 @@
 				CD7FA6541ACEAF63005D2E2C /* UIButton+AFNetworking.m in Sources */,
 				CD7FA6031ACEAF63005D2E2C /* MSPlayer.m in Sources */,
 				CD7FA63C1ACEAF63005D2E2C /* AFSecurityPolicy.m in Sources */,
+				7F37B08A1B39696F0082E1ED /* _MSEvent.m in Sources */,
 				CD7FA37F1ACD4196005D2E2C /* MSMatchDetailInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2460,6 +2473,7 @@
 				CD7FA67C1ACEAF63005D2E2C /* NSManagedObject+MagicalDataImport.m in Sources */,
 				CD7FA61F1ACEAF63005D2E2C /* _MSPlayerProgress.m in Sources */,
 				CD7FA6131ACEAF63005D2E2C /* _MSLeagueTeamResult.m in Sources */,
+				7F37B08B1B39696F0082E1ED /* _MSEvent.m in Sources */,
 				CD7FA6281ACEAF63005D2E2C /* MSModel.xcdatamodeld in Sources */,
 				CD7FA5FE1ACEAF63005D2E2C /* MSMatch.m in Sources */,
 				CD7FA6971ACEAF63005D2E2C /* NSPersistentStore+MagicalRecord.m in Sources */,
@@ -2598,8 +2612,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = FlagsRecognizer.entitlements;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daria Shabadash (49ULM952KG)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -2628,8 +2642,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = FlagsRecognizer;
-				PROVISIONING_PROFILE = "6c6e66bc-bd5b-4f92-9c83-fb8856ec954e";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -2644,8 +2658,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = FlagsRecognizer.entitlements;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daria Shabadash (49ULM952KG)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -2673,8 +2687,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = FlagsRecognizer;
-				PROVISIONING_PROFILE = "bb190a7b-5b5d-4387-8056-fb08b322e7c4";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -2684,8 +2698,9 @@
 		84D5FFE018A41F1F0018BAFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "83672f8f-787a-4f7f-86ab-fde50caf1aff";
+				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
 				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
@@ -2693,8 +2708,9 @@
 		84D5FFE118A41F1F0018BAFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "83672f8f-787a-4f7f-86ab-fde50caf1aff";
+				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
 				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
@@ -2709,8 +2725,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daria Shabadash (49ULM952KG)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -2722,7 +2738,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "cfceda7a-df8c-4bb9-8b8a-2450ee47e0c4";
+				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -2739,8 +2755,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: DataArt Solutions, Inc.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: DataArt Solutions, Inc.";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daria Shabadash (49ULM952KG)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -2750,7 +2766,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a0ad2c6c-8920-4ad7-a4c1-4867d9d6cb89";
+				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -2767,8 +2783,8 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_ENTITLEMENTS = "FlagRecognition WatchKit Extension/FlagRecognition WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daria Shabadash (49ULM952KG)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2785,8 +2801,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "01c66ac8-ffbd-43d8-a6c1-1446c639eb9d";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "01c66ac8-ffbd-43d8-a6c1-1446c639eb9d";
+				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -2801,8 +2817,8 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_ENTITLEMENTS = "FlagRecognition WatchKit Extension/FlagRecognition WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: DataArt Solutions, Inc.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: DataArt Solutions, Inc.";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daria Shabadash (49ULM952KG)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2817,7 +2833,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "e6567603-09b9-48c7-9626-c578fd7b1e2d";
+				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -2832,8 +2848,8 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_ENTITLEMENTS = "FlagRecognition Today Extension/TodayExtension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daria Shabadash (49ULM952KG)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2850,8 +2866,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = TodayExtension;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "31916cdb-b742-4f33-8865-4e2f7460a8e4";
+				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -2866,8 +2882,8 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_ENTITLEMENTS = "FlagRecognition Today Extension/TodayExtension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: DataArt Solutions, Inc.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: DataArt Solutions, Inc.";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daria Shabadash (49ULM952KG)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2882,7 +2898,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = TodayExtension;
-				PROVISIONING_PROFILE = "4c263236-117d-40a5-9e4c-b3c59b9aaaeb";
+				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
