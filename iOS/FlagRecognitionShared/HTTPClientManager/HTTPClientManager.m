@@ -26,6 +26,7 @@
 #import "MSPlayer.h"
 #import "MSLeagueTeamResult.h"
 #import "MSPlayerProgress.h"
+#import "MSEvent.h"
 
 @interface HTTPClientManager ()
 
@@ -41,6 +42,7 @@ static NSString * const kBaseURLString = @"http://91.247.221.248/api/public";// 
 static NSString * const kCountries = @"countries";
 static NSString * const kTeamsOfCountry = @"teamsofcountry/";
 static NSString * const kTeam = @"team/";
+static NSString * const kEvent = @"event/";
 static NSString * const kCountry = @"country/";
 static NSString * const kLastMatches = @"last_matches/";
 static NSString * const kSquad = @"squad/";
@@ -174,6 +176,27 @@ NSString * const kHTTPClientManagerReachabilityStateChangedNotification = @"kHTT
         [[NSManagedObjectContext MR_contextForCurrentThread] MR_saveToPersistentStoreAndWait];
         
         performCompletionBlockWithData(completion, success, error, team);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        performCompletionBlockWithData(completion, NO, error, nil);
+    }];
+}
+
+- (void)requestEventDetailsForEventWithID:(NSString *)eventID withCompletion:(MSCompletionBlockWithData)completion {
+    NSParameterAssert(eventID);
+    
+    NSString *path = [NSString stringWithFormat:@"%@%@", kEvent, eventID];
+    
+    [self GET:path parameters:nil success:^(NSURLSessionDataTask *task, id eventJSON) {
+        MSEvent *event = nil;
+        BOOL success = YES;
+        NSError * error = nil;
+        if (eventJSON) {
+            // operate with relationship data from json
+
+        }
+        [[NSManagedObjectContext MR_contextForCurrentThread] MR_saveToPersistentStoreAndWait];
+        
+        performCompletionBlockWithData(completion, success, error, event);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         performCompletionBlockWithData(completion, NO, error, nil);
     }];

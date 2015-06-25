@@ -11,7 +11,8 @@
 #import "MSPlayer.h"
 #import "MSTeam.h"
 
-
+@implementation MSEventID
+@end
 @implementation _MSEvent
 
 @dynamic eventType;

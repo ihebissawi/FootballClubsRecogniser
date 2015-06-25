@@ -28,6 +28,7 @@ extern NSString *const kHTTPClientManagerReachabilityStateChangedNotification;
 - (void)requestCountriesWithCompletion:(MSCompletionBlockWithData)completion;
 - (void)requestTeamsPlayingInCountry:(MSCountry *)country withCompletion:(MSCompletionBlockWithData)completion;
 - (void)requestTeamDetailsForTeamWithID:(NSString *)teamID withCompletion:(MSCompletionBlockWithData)completion;
+- (void)requestEventDetailsForEventWithID:(NSString *)eventID withCompletion:(MSCompletionBlockWithData)completion;
 - (void)requestLeaguesForCountry:(MSCountry *)country withCompletion:(MSCompletionBlockWithData)completion;
 - (void)requestLastMatchesForTeam:(MSTeam *)team withCompletion:(MSCompletionBlockWithData)completion;
 - (void)requestSquadForTeam:(MSTeam *)team withCompletion:(MSCompletionBlockWithData)completion;

@@ -90,7 +90,17 @@
 
 -(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
-	if ([userInfo objectForKey:@"content-available"] != nil)
+    
+    NSLog(@"Received notification: %@", userInfo);
+    
+    if ([userInfo objectForKey:@"event_id"] != nil) {
+        [[MSDataManager sharedManager] requestEventWithID:[userInfo objectForKey:@"event_id"]
+                                           withCompletion:nil];
+    }
+    
+    //put record to the coredata!!!
+    
+    /*	if ([userInfo objectForKey:@"content-available"] != nil)
 	{
 		NSInteger number = [[[NSUserDefaults standardUserDefaults] objectForKey:@"badge"] intValue] + 1;
 		[[UIApplication sharedApplication] setApplicationIconBadgeNumber:number];
@@ -106,7 +116,7 @@
 
 		[[NSUserDefaults standardUserDefaults] synchronize];
 		completionHandler(UIBackgroundFetchResultNewData);
-	}
+	}*/
 }
 
 -(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
@@ -119,6 +129,7 @@
 - (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
 {
 	[[HTTPClientManager sharedHTTPClient] registerForPushNotificationsWithDeviceToken:deviceToken completion:nil];
+    NSLog(@"Device token is: %@", deviceToken);
 }
 
 - (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error

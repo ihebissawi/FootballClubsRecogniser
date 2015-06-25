@@ -18,6 +18,7 @@
 #import "MSLeagueTeamResult.h"
 #import "MSPlayer.h"
 #import "MSPlayerProgress.h"
+#import "MSEvent.h"
 
 
 #define kMSPlayersCommonListDeltaUploadCounter 50
@@ -298,6 +299,18 @@
     }
 }
 
+- (void)requestEventWithID:(NSString *)eventID withCompletion:(MSCompletionBlockWithData)completion {
+    NSParameterAssert(eventID);
+    
+    MSEvent *event = [MSEvent MR_findFirstByAttribute:@"iD" withValue:eventID];
+    if ([self isValidDataInManagedObject:event]) {
+        performCompletionBlockWithData(completion, YES, nil, event);
+    } else {
+        [self.httpClient requestEventDetailsForEventWithID:eventID
+                                          withCompletion:completion];
+    }
+}
+
 #pragma mark - MSLeaguesTableViewController
 - (void)requestLeaguesOfCountry:(MSCountry *)country
           forceUpdateFromServer:(BOOL)forceUpdateFromServer
@@ -414,6 +427,7 @@
 		 }];
 //	}
 }
+
 
 #pragma mark - Notification
 

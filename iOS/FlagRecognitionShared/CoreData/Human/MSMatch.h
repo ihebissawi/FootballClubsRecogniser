@@ -5,5 +5,6 @@
 
 - (NSDate *)date; //!!!: hours and minuts valid only for future matches
 - (BOOL)notFinished;
+- (NSArray *)events;
 
 @end

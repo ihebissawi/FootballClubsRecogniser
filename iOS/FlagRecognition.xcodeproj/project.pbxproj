@@ -102,6 +102,9 @@
 		7FD14E5F1B3436C20000ECA5 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD14E5B1B3436C20000ECA5 /* Crashlytics.framework */; };
 		7FD14E601B3436C20000ECA5 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD14E5B1B3436C20000ECA5 /* Crashlytics.framework */; };
 		7FD14E611B3436C20000ECA5 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD14E5B1B3436C20000ECA5 /* Crashlytics.framework */; };
+		7FEC427C1B3AF10900B2DCBB /* MSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEC427B1B3AF10900B2DCBB /* MSEvent.m */; };
+		7FEC427D1B3AF10900B2DCBB /* MSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEC427B1B3AF10900B2DCBB /* MSEvent.m */; };
+		7FEC427E1B3AF10900B2DCBB /* MSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEC427B1B3AF10900B2DCBB /* MSEvent.m */; };
 		822B28D814991AC0001A7DD1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822B28D714991AC0001A7DD1 /* QuartzCore.framework */; };
 		822B28DC14991ADC001A7DD1 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822B28DB14991ADC001A7DD1 /* CoreVideo.framework */; };
 		822B28DE14991AEF001A7DD1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822B28DD14991AEF001A7DD1 /* CoreMedia.framework */; };
@@ -528,6 +531,8 @@
 		7F37B0881B39696F0082E1ED /* _MSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _MSEvent.m; path = ../../../_MSEvent.m; sourceTree = "<group>"; };
 		7FD14E5A1B3436C20000ECA5 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		7FD14E5B1B3436C20000ECA5 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		7FEC427A1B3AF10900B2DCBB /* MSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSEvent.h; sourceTree = "<group>"; };
+		7FEC427B1B3AF10900B2DCBB /* MSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSEvent.m; sourceTree = "<group>"; };
 		822B28D514991AAD001A7DD1 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		822B28D714991AC0001A7DD1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		822B28D914991ACF001A7DD1 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -1574,6 +1579,8 @@
 				CD7FA5601ACEAF63005D2E2C /* MSPlayerProgress.m */,
 				CD7FA5611ACEAF63005D2E2C /* MSTeam.h */,
 				CD7FA5621ACEAF63005D2E2C /* MSTeam.m */,
+				7FEC427A1B3AF10900B2DCBB /* MSEvent.h */,
+				7FEC427B1B3AF10900B2DCBB /* MSEvent.m */,
 			);
 			path = Human;
 			sourceTree = "<group>";
@@ -2244,6 +2251,7 @@
 				CD7FA6381ACEAF63005D2E2C /* AFNetworkReachabilityManager.m in Sources */,
 				8A13A72D1A645D1B006A4632 /* SVIndefiniteAnimatedView.m in Sources */,
 				CD7FA6801ACEAF63005D2E2C /* NSManagedObject+MagicalRecord.m in Sources */,
+				7FEC427C1B3AF10900B2DCBB /* MSEvent.m in Sources */,
 				CD7FA6741ACEAF63005D2E2C /* NSString+MagicalDataImport.m in Sources */,
 				CD7FA68C1ACEAF63005D2E2C /* NSManagedObjectContext+MagicalSaves.m in Sources */,
 				CD7FA65F1ACEAF63005D2E2C /* UIWebView+AFNetworking.m in Sources */,
@@ -2367,6 +2375,7 @@
 				CD7FA6301ACEAF63005D2E2C /* AFHTTPRequestOperation.m in Sources */,
 				CD7FA6AB1ACEAF63005D2E2C /* MagicalRecord+ShorthandSupport.m in Sources */,
 				CD7FA67E1ACEAF63005D2E2C /* NSManagedObject+MagicalFinders.m in Sources */,
+				7FEC427D1B3AF10900B2DCBB /* MSEvent.m in Sources */,
 				CD7FA6661ACEAF63005D2E2C /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				CD7FA3861ACD41BB005D2E2C /* MSMatchRowController.m in Sources */,
 				CDF402C31ADD267F005616CA /* NSUserDefaults+AppGroup.m in Sources */,
@@ -2486,6 +2495,7 @@
 				CD7FA69A1ACEAF63005D2E2C /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				CDF402C41ADD267F005616CA /* NSUserDefaults+AppGroup.m in Sources */,
 				CD7FA6881ACEAF63005D2E2C /* NSManagedObjectContext+MagicalObserving.m in Sources */,
+				7FEC427E1B3AF10900B2DCBB /* MSEvent.m in Sources */,
 				CD7FA66D1ACEAF63005D2E2C /* NSNumber+MagicalDataImport.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2642,8 +2652,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = FlagsRecognizer;
-				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
+				PROVISIONING_PROFILE = "1aadd081-5cf7-42d7-bac7-9ad0675405fc";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1aadd081-5cf7-42d7-bac7-9ad0675405fc";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -2687,8 +2697,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = FlagsRecognizer;
-				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
+				PROVISIONING_PROFILE = "1aadd081-5cf7-42d7-bac7-9ad0675405fc";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1aadd081-5cf7-42d7-bac7-9ad0675405fc";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -2738,7 +2748,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
+				PROVISIONING_PROFILE = "f8413e92-e9df-41e2-b160-63b8f8d39900";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -2766,7 +2776,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
+				PROVISIONING_PROFILE = "f8413e92-e9df-41e2-b160-63b8f8d39900";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -2801,8 +2811,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
+				PROVISIONING_PROFILE = "a2b79684-2953-44ca-96d7-2eb2c9dd48ef";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "a2b79684-2953-44ca-96d7-2eb2c9dd48ef";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -2833,7 +2843,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
+				PROVISIONING_PROFILE = "a2b79684-2953-44ca-96d7-2eb2c9dd48ef";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "a2b79684-2953-44ca-96d7-2eb2c9dd48ef";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -2866,8 +2877,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = TodayExtension;
-				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
+				PROVISIONING_PROFILE = "02e02193-5103-4cc0-86da-9c5c97d08f6c";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "02e02193-5103-4cc0-86da-9c5c97d08f6c";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -2898,8 +2909,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = TodayExtension;
-				PROVISIONING_PROFILE = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "09321a69-4d8e-4f16-adb7-2ecb30f88570";
+				PROVISIONING_PROFILE = "02e02193-5103-4cc0-86da-9c5c97d08f6c";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "02e02193-5103-4cc0-86da-9c5c97d08f6c";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

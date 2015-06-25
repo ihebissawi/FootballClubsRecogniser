@@ -248,7 +248,7 @@ typedef enum {
                 
                 __weak MSTeamDetailsViewController *weakSelf = self;
                 [self.dataManager requestLastMatchesResultsForTeam:self.sourceTeam
-                                             forceUpdateFromServer:NO
+                                             forceUpdateFromServer:YES//JUST TO TEST !!!NO
                                                     withCompletion:^(BOOL success, NSError *error, id data) {
                                                         MSTeamDetailsViewController *strongSelf = weakSelf;
                                                         if(!strongSelf) return;

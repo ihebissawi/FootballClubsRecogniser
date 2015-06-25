@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "MSPerishableEntity.h"
+
+@interface MSEventID : MSPerishableEntityID {}
+@end
 
 @class MSMatch, MSPlayer, MSTeam;
 
-@interface _MSEvent : NSManagedObject
+@interface _MSEvent : MSPerishableEntity {}
 
 @property (nonatomic, retain) NSNumber * eventType;
 @property (nonatomic, retain) NSString * iD;

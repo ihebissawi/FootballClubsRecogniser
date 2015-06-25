@@ -74,6 +74,8 @@
 
 -(void)setMatch:(MSMatch *)match
 {
+    NSLog(@"match.events %@", match.matchEvents.description);
+    
  	self.ongoingMatchIndicator.hidden = !match.notFinished;
 //	if (match.notFinished)
 //	{

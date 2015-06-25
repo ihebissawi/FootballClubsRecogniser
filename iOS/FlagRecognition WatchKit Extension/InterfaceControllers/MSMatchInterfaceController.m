@@ -15,7 +15,12 @@
 
 #import "MSMatchRowController.h"
 
+#import "MSMatch.h"
+#import "MSTeam.h"
+
+
 @interface MSMatchInterfaceController()
+
 
 @property (nonatomic,strong) NSArray *contentArray;
 
@@ -65,6 +70,28 @@
 			 NSLog(@"%@",error.localizedDescription);
 	 }];
 }
+
+-(void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex {
+    
+    MSMatch *selectedMatch = [self.contentArray objectAtIndex:rowIndex];
+    
+    NSMutableDictionary *matchDictionary = [NSMutableDictionary new];
+    
+    NSArray *matchEvents = selectedMatch.events;
+    
+    NSString *matchTitle = [NSString stringWithFormat:@"%@ vs %@", selectedMatch.teamHome.shortName, selectedMatch.teamAway.shortName];
+    [matchDictionary setObject:matchTitle forKey:@"matchTitle"];
+    
+    //set other params to send
+    
+    if (matchEvents) {
+        [matchDictionary setObject:matchEvents forKey:@"matchEvents"];
+    }
+    [self presentControllerWithName:@"Match Details"
+                            context:matchDictionary];
+    
+}
+
 
 @end
 

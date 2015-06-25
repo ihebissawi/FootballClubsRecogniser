@@ -74,5 +74,15 @@
     return date;
 }
 
+- (NSArray *)events {
+    if (!self.matchEvents.count) {
+        return nil;
+    }
+    
+    NSArray *events = [self.matchEvents allObjects];
+    return events;
+    
+}
+
 
 @end

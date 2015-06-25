@@ -9,10 +9,10 @@
 #import <WatchKit/WatchKit.h>
 #import <Foundation/Foundation.h>
 
-//@class MSMatch; 
+@class MSEvent;
 
 @interface MSMatchEventRowController : NSObject
 
-//
+-(void)setMatchEvent:(MSEvent *)matchEvent;
 
 @end

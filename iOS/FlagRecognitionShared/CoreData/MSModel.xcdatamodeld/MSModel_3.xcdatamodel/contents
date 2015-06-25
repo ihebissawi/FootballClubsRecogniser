@@ -534,14 +534,14 @@
         </userInfo>
     </entity>
     <elements>
-        <element name="MSCountry" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="_MSEvent" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="MSLeague" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="MSLeagueTeamResult" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="MSMatch" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="MSPerishableEntity" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="MSPlayer" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="MSPlayerProgress" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="MSTeam" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="_MSEvent" positionX="117" positionY="-177" width="128" height="193"/>
+        <element name="MSCountry" positionX="682" positionY="-207" width="128" height="120"/>
+        <element name="MSLeague" positionX="376" positionY="-342" width="128" height="105"/>
+        <element name="MSLeagueTeamResult" positionX="639" positionY="165" width="128" height="285"/>
+        <element name="MSMatch" positionX="880" positionY="243" width="128" height="270"/>
+        <element name="MSPerishableEntity" positionX="682" positionY="6" width="128" height="73"/>
+        <element name="MSPlayer" positionX="-45" positionY="183" width="128" height="420"/>
+        <element name="MSPlayerProgress" positionX="-218" positionY="-63" width="128" height="255"/>
+        <element name="MSTeam" positionX="367" positionY="246" width="128" height="510"/>
     </elements>
 </model>

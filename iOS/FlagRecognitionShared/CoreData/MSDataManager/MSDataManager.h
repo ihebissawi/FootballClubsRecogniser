@@ -44,6 +44,8 @@
                      withCompletion:(MSCompletionBlockWithData)completion;
 - (void)requestTeamWithID:(NSString *)teamID withCompletion:(MSCompletionBlockWithData)completion;
 
+- (void)requestEventWithID:(NSString *)eventID withCompletion:(MSCompletionBlockWithData)completion;
+
 //for MSLeaguesTableViewController
 - (void)requestLeaguesOfCountry:(MSCountry *)country
           forceUpdateFromServer:(BOOL)forceUpdateFromServer

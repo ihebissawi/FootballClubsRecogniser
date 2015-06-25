@@ -99,6 +99,7 @@ extern const struct MSMatchUserInfo {
 
 @property (nonatomic, retain) NSSet *matchEvents;
 
+
 @end
 
 @interface _MSMatch (MatchEventsCoreDataGeneratedAccessors)
