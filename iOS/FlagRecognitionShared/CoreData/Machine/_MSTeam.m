@@ -37,7 +37,7 @@ const struct MSTeamRelationships MSTeamRelationships = {
 	.awayMatches = @"awayMatches",
 	.homeMatches = @"homeMatches",
 	.squad = @"squad",
-    .teamEvents = @"teamEvents"
+	.teamEvents = @"teamEvents",
 };
 
 const struct MSTeamUserInfo MSTeamUserInfo = {
@@ -208,6 +208,15 @@ const struct MSTeamUserInfo MSTeamUserInfo = {
 }
 
 @dynamic teamEvents;
+
+- (NSMutableSet*)teamEventsSet {
+	[self willAccessValueForKey:@"teamEvents"];
+
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"teamEvents"];
+
+	[self didAccessValueForKey:@"teamEvents"];
+	return result;
+}
 
 @end
 

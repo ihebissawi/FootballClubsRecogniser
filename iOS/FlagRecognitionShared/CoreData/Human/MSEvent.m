@@ -10,4 +10,7 @@
 
 @implementation MSEvent
 
+- (void)foo{
+    NSLog(@"TEST");
+}
 @end

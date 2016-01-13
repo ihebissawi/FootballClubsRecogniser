@@ -19,9 +19,9 @@ const struct MSMatchAttributes MSMatchAttributes = {
 };
 
 const struct MSMatchRelationships MSMatchRelationships = {
+	.matchEvents = @"matchEvents",
 	.teamAway = @"teamAway",
 	.teamHome = @"teamHome",
-    .matchEvents = @"matchEvents"
 };
 
 const struct MSMatchUserInfo MSMatchUserInfo = {
@@ -81,11 +81,20 @@ const struct MSMatchUserInfo MSMatchUserInfo = {
 
 @dynamic timestamp;
 
+@dynamic matchEvents;
+
+- (NSMutableSet*)matchEventsSet {
+	[self willAccessValueForKey:@"matchEvents"];
+
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"matchEvents"];
+
+	[self didAccessValueForKey:@"matchEvents"];
+	return result;
+}
+
 @dynamic teamAway;
 
 @dynamic teamHome;
-
-@dynamic matchEvents;
 
 @end
 

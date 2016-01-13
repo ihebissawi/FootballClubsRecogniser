@@ -20,17 +20,18 @@ extern const struct MSMatchAttributes {
 } MSMatchAttributes;
 
 extern const struct MSMatchRelationships {
+	__unsafe_unretained NSString *matchEvents;
 	__unsafe_unretained NSString *teamAway;
 	__unsafe_unretained NSString *teamHome;
-    __unsafe_unretained NSString *matchEvents;
 } MSMatchRelationships;
 
 extern const struct MSMatchUserInfo {
 	__unsafe_unretained NSString *relatedByAttribute;
 } MSMatchUserInfo;
 
-@class MSTeam;
 @class MSEvent;
+@class MSTeam;
+@class MSTeam;
 
 @interface MSMatchID : MSPerishableEntityID {}
 @end
@@ -89,6 +90,10 @@ extern const struct MSMatchUserInfo {
 
 //- (BOOL)validateTimestamp:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) NSSet *matchEvents;
+
+- (NSMutableSet*)matchEventsSet;
+
 @property (nonatomic, strong) MSTeam *teamAway;
 
 //- (BOOL)validateTeamAway:(id*)value_ error:(NSError**)error_;
@@ -97,17 +102,13 @@ extern const struct MSMatchUserInfo {
 
 //- (BOOL)validateTeamHome:(id*)value_ error:(NSError**)error_;
 
-@property (nonatomic, retain) NSSet *matchEvents;
-
-
 @end
 
 @interface _MSMatch (MatchEventsCoreDataGeneratedAccessors)
-
-- (void)addMatchEventsObject:(MSEvent *)value;
-- (void)removeMatchEventsObject:(MSEvent *)value;
-- (void)addMatchEvents:(NSSet *)values;
-- (void)removeMatchEvents:(NSSet *)values;
+- (void)addMatchEvents:(NSSet*)value_;
+- (void)removeMatchEvents:(NSSet*)value_;
+- (void)addMatchEventsObject:(MSEvent*)value_;
+- (void)removeMatchEventsObject:(MSEvent*)value_;
 
 @end
 
@@ -149,14 +150,13 @@ extern const struct MSMatchUserInfo {
 - (NSString*)primitiveTimestamp;
 - (void)setPrimitiveTimestamp:(NSString*)value;
 
+- (NSMutableSet*)primitiveMatchEvents;
+- (void)setPrimitiveMatchEvents:(NSMutableSet*)value;
+
 - (MSTeam*)primitiveTeamAway;
 - (void)setPrimitiveTeamAway:(MSTeam*)value;
 
 - (MSTeam*)primitiveTeamHome;
 - (void)setPrimitiveTeamHome:(MSTeam*)value;
-
-- (NSMutableSet*)primitiveMatchEvents;
-- (void)setPrimitiveMatchEvents:(NSMutableSet*)value;
-
 
 @end

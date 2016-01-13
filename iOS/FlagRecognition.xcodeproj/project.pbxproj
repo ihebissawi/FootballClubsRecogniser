@@ -21,6 +21,35 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0220C5571C46B468005CB538 /* _MSCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5461C46B468005CB538 /* _MSCountry.m */; };
+		0220C5581C46B468005CB538 /* _MSCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5461C46B468005CB538 /* _MSCountry.m */; };
+		0220C5591C46B468005CB538 /* _MSCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5461C46B468005CB538 /* _MSCountry.m */; };
+		0220C55A1C46B468005CB538 /* _MSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5481C46B468005CB538 /* _MSEvent.m */; };
+		0220C55B1C46B468005CB538 /* _MSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5481C46B468005CB538 /* _MSEvent.m */; };
+		0220C55C1C46B468005CB538 /* _MSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5481C46B468005CB538 /* _MSEvent.m */; };
+		0220C55D1C46B468005CB538 /* _MSLeague.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C54A1C46B468005CB538 /* _MSLeague.m */; };
+		0220C55E1C46B468005CB538 /* _MSLeague.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C54A1C46B468005CB538 /* _MSLeague.m */; };
+		0220C55F1C46B468005CB538 /* _MSLeague.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C54A1C46B468005CB538 /* _MSLeague.m */; };
+		0220C5601C46B468005CB538 /* _MSLeagueTeamResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C54C1C46B468005CB538 /* _MSLeagueTeamResult.m */; };
+		0220C5611C46B468005CB538 /* _MSLeagueTeamResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C54C1C46B468005CB538 /* _MSLeagueTeamResult.m */; };
+		0220C5621C46B468005CB538 /* _MSLeagueTeamResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C54C1C46B468005CB538 /* _MSLeagueTeamResult.m */; };
+		0220C5631C46B468005CB538 /* _MSMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C54E1C46B468005CB538 /* _MSMatch.m */; };
+		0220C5641C46B468005CB538 /* _MSMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C54E1C46B468005CB538 /* _MSMatch.m */; };
+		0220C5651C46B468005CB538 /* _MSMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C54E1C46B468005CB538 /* _MSMatch.m */; };
+		0220C5661C46B468005CB538 /* _MSPerishableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5501C46B468005CB538 /* _MSPerishableEntity.m */; };
+		0220C5671C46B468005CB538 /* _MSPerishableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5501C46B468005CB538 /* _MSPerishableEntity.m */; };
+		0220C5681C46B468005CB538 /* _MSPerishableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5501C46B468005CB538 /* _MSPerishableEntity.m */; };
+		0220C5691C46B468005CB538 /* _MSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5521C46B468005CB538 /* _MSPlayer.m */; };
+		0220C56A1C46B468005CB538 /* _MSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5521C46B468005CB538 /* _MSPlayer.m */; };
+		0220C56B1C46B468005CB538 /* _MSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5521C46B468005CB538 /* _MSPlayer.m */; };
+		0220C56C1C46B468005CB538 /* _MSPlayerProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5541C46B468005CB538 /* _MSPlayerProgress.m */; };
+		0220C56D1C46B468005CB538 /* _MSPlayerProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5541C46B468005CB538 /* _MSPlayerProgress.m */; };
+		0220C56E1C46B468005CB538 /* _MSPlayerProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5541C46B468005CB538 /* _MSPlayerProgress.m */; };
+		0220C56F1C46B468005CB538 /* _MSTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5561C46B468005CB538 /* _MSTeam.m */; };
+		0220C5701C46B468005CB538 /* _MSTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5561C46B468005CB538 /* _MSTeam.m */; };
+		0220C5711C46B468005CB538 /* _MSTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5561C46B468005CB538 /* _MSTeam.m */; };
+		02ECB4E31C341E3F00ECCC4D /* FlagRecognition WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD8B3BE01AC58AB50013862E /* FlagRecognition WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		02ECB4E61C341E3F00ECCC4D /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD8B3C091AC58AEE0013862E /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5712F68018E0953B009A0731 /* MSLoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5712F67F18E0953B009A0731 /* MSLoadingTableViewCell.m */; };
 		5712F68218E09548009A0731 /* MSLoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5712F68118E09548009A0731 /* MSLoadingTableViewCell.xib */; };
 		5712F68618E09B92009A0731 /* MSDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5712F68518E09B92009A0731 /* MSDataTableViewCell.m */; };
@@ -93,9 +122,6 @@
 		5F67D57818DCA74800195524 /* footballGrass.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F67D57718DCA74800195524 /* footballGrass.png */; };
 		790F7D8D15DD4364007C45F8 /* DB_JSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = 790F7D8C15DD4364007C45F8 /* DB_JSON.txt */; };
 		790F7D8F15DE277B007C45F8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790F7D8E15DE277B007C45F8 /* CoreData.framework */; };
-		7F37B0891B39696F0082E1ED /* _MSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F37B0881B39696F0082E1ED /* _MSEvent.m */; };
-		7F37B08A1B39696F0082E1ED /* _MSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F37B0881B39696F0082E1ED /* _MSEvent.m */; };
-		7F37B08B1B39696F0082E1ED /* _MSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F37B0881B39696F0082E1ED /* _MSEvent.m */; };
 		7FD14E5C1B3436C20000ECA5 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD14E5A1B3436C20000ECA5 /* Fabric.framework */; };
 		7FD14E5D1B3436C20000ECA5 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD14E5A1B3436C20000ECA5 /* Fabric.framework */; };
 		7FD14E5E1B3436C20000ECA5 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD14E5A1B3436C20000ECA5 /* Fabric.framework */; };
@@ -140,7 +166,6 @@
 		84B0295818A437F5003B3679 /* MSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0295718A437F5003B3679 /* MSTableViewController.m */; };
 		84B0295B18A43E35003B3679 /* MSLeaguesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0295A18A43E35003B3679 /* MSLeaguesTableViewController.m */; };
 		84B0295E18A44194003B3679 /* UIViewController+MSNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0295D18A44194003B3679 /* UIViewController+MSNavigationItem.m */; };
-		84B0295F18A44DC9003B3679 /* Storyboard.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 84D5FFF218A4294C0018BAFE /* Storyboard.storyboard */; };
 		84B0296218A4FD5C003B3679 /* UIViewController+MSActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0296118A4FD5C003B3679 /* UIViewController+MSActivityIndicator.m */; };
 		84B0296518A50044003B3679 /* MSActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0296418A50044003B3679 /* MSActivityIndicatorView.m */; };
 		84B0296918A5009F003B3679 /* UIView+MSNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0296818A5009F003B3679 /* UIView+MSNib.m */; };
@@ -213,30 +238,6 @@
 		CD7FA6081ACEAF63005D2E2C /* MSTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5621ACEAF63005D2E2C /* MSTeam.m */; };
 		CD7FA6091ACEAF63005D2E2C /* MSTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5621ACEAF63005D2E2C /* MSTeam.m */; };
 		CD7FA60A1ACEAF63005D2E2C /* MSTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5621ACEAF63005D2E2C /* MSTeam.m */; };
-		CD7FA60B1ACEAF63005D2E2C /* _MSCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5651ACEAF63005D2E2C /* _MSCountry.m */; };
-		CD7FA60C1ACEAF63005D2E2C /* _MSCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5651ACEAF63005D2E2C /* _MSCountry.m */; };
-		CD7FA60D1ACEAF63005D2E2C /* _MSCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5651ACEAF63005D2E2C /* _MSCountry.m */; };
-		CD7FA60E1ACEAF63005D2E2C /* _MSLeague.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5671ACEAF63005D2E2C /* _MSLeague.m */; };
-		CD7FA60F1ACEAF63005D2E2C /* _MSLeague.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5671ACEAF63005D2E2C /* _MSLeague.m */; };
-		CD7FA6101ACEAF63005D2E2C /* _MSLeague.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5671ACEAF63005D2E2C /* _MSLeague.m */; };
-		CD7FA6111ACEAF63005D2E2C /* _MSLeagueTeamResult.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5691ACEAF63005D2E2C /* _MSLeagueTeamResult.m */; };
-		CD7FA6121ACEAF63005D2E2C /* _MSLeagueTeamResult.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5691ACEAF63005D2E2C /* _MSLeagueTeamResult.m */; };
-		CD7FA6131ACEAF63005D2E2C /* _MSLeagueTeamResult.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5691ACEAF63005D2E2C /* _MSLeagueTeamResult.m */; };
-		CD7FA6141ACEAF63005D2E2C /* _MSMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA56B1ACEAF63005D2E2C /* _MSMatch.m */; };
-		CD7FA6151ACEAF63005D2E2C /* _MSMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA56B1ACEAF63005D2E2C /* _MSMatch.m */; };
-		CD7FA6161ACEAF63005D2E2C /* _MSMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA56B1ACEAF63005D2E2C /* _MSMatch.m */; };
-		CD7FA6171ACEAF63005D2E2C /* _MSPerishableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA56D1ACEAF63005D2E2C /* _MSPerishableEntity.m */; };
-		CD7FA6181ACEAF63005D2E2C /* _MSPerishableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA56D1ACEAF63005D2E2C /* _MSPerishableEntity.m */; };
-		CD7FA6191ACEAF63005D2E2C /* _MSPerishableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA56D1ACEAF63005D2E2C /* _MSPerishableEntity.m */; };
-		CD7FA61A1ACEAF63005D2E2C /* _MSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA56F1ACEAF63005D2E2C /* _MSPlayer.m */; };
-		CD7FA61B1ACEAF63005D2E2C /* _MSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA56F1ACEAF63005D2E2C /* _MSPlayer.m */; };
-		CD7FA61C1ACEAF63005D2E2C /* _MSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA56F1ACEAF63005D2E2C /* _MSPlayer.m */; };
-		CD7FA61D1ACEAF63005D2E2C /* _MSPlayerProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5711ACEAF63005D2E2C /* _MSPlayerProgress.m */; };
-		CD7FA61E1ACEAF63005D2E2C /* _MSPlayerProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5711ACEAF63005D2E2C /* _MSPlayerProgress.m */; };
-		CD7FA61F1ACEAF63005D2E2C /* _MSPlayerProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5711ACEAF63005D2E2C /* _MSPlayerProgress.m */; };
-		CD7FA6201ACEAF63005D2E2C /* _MSTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5731ACEAF63005D2E2C /* _MSTeam.m */; };
-		CD7FA6211ACEAF63005D2E2C /* _MSTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5731ACEAF63005D2E2C /* _MSTeam.m */; };
-		CD7FA6221ACEAF63005D2E2C /* _MSTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5731ACEAF63005D2E2C /* _MSTeam.m */; };
 		CD7FA6231ACEAF63005D2E2C /* MSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5761ACEAF63005D2E2C /* MSDataManager.m */; };
 		CD7FA6241ACEAF63005D2E2C /* MSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5761ACEAF63005D2E2C /* MSDataManager.m */; };
 		CD7FA6251ACEAF63005D2E2C /* MSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7FA5761ACEAF63005D2E2C /* MSDataManager.m */; };
@@ -383,17 +384,29 @@
 		CD8B3BF01AC58AB50013862E /* FlagRecognition WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = CD8B3BEF1AC58AB50013862E /* FlagRecognition WatchKit App.app */; };
 		CD8B3BF81AC58AB50013862E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8B3BF61AC58AB50013862E /* Interface.storyboard */; };
 		CD8B3BFA1AC58AB50013862E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8B3BF91AC58AB50013862E /* Images.xcassets */; };
-		CD8B3BFD1AC58AB50013862E /* FlagRecognition WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD8B3BE01AC58AB50013862E /* FlagRecognition WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CD8B3C0B1AC58AEE0013862E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8B3C0A1AC58AEE0013862E /* NotificationCenter.framework */; };
 		CD8B3C111AC58AEE0013862E /* MSTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8B3C101AC58AEE0013862E /* MSTodayViewController.m */; };
 		CD8B3C131AC58AEE0013862E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8B3C121AC58AEE0013862E /* MainInterface.storyboard */; };
-		CD8B3C161AC58AEE0013862E /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD8B3C091AC58AEE0013862E /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CDF402C21ADD267F005616CA /* NSUserDefaults+AppGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF402C11ADD267F005616CA /* NSUserDefaults+AppGroup.m */; };
 		CDF402C31ADD267F005616CA /* NSUserDefaults+AppGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF402C11ADD267F005616CA /* NSUserDefaults+AppGroup.m */; };
 		CDF402C41ADD267F005616CA /* NSUserDefaults+AppGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF402C11ADD267F005616CA /* NSUserDefaults+AppGroup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		02ECB4E41C341E3F00ECCC4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82A1658E149907C100B8AEB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD8B3BDF1AC58AB50013862E;
+			remoteInfo = "FlagRecognition WatchKit Extension";
+		};
+		02ECB4E71C341E3F00ECCC4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82A1658E149907C100B8AEB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD8B3C081AC58AEE0013862E;
+			remoteInfo = "FlagRecognition Today Extension";
+		};
 		CD8B3BF11AC58AB50013862E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 82A1658E149907C100B8AEB4 /* Project object */;
@@ -401,23 +414,21 @@
 			remoteGlobalIDString = CD8B3BEE1AC58AB50013862E;
 			remoteInfo = "FlagRecognition WatchKit App";
 		};
-		CD8B3BFB1AC58AB50013862E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82A1658E149907C100B8AEB4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CD8B3BDF1AC58AB50013862E;
-			remoteInfo = "FlagRecognition WatchKit Extension";
-		};
-		CD8B3C141AC58AEE0013862E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82A1658E149907C100B8AEB4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CD8B3C081AC58AEE0013862E;
-			remoteInfo = "FlagRecognition Today Extension";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		02ECB4E91C341E3F00ECCC4D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				02ECB4E61C341E3F00ECCC4D /* TodayExtension.appex in Embed App Extensions */,
+				02ECB4E31C341E3F00ECCC4D /* FlagRecognition WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD7FA3B01ACE936F005D2E2C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -428,21 +439,27 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD8B3C041AC58AB50013862E /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				CD8B3C161AC58AEE0013862E /* TodayExtension.appex in Embed App Extensions */,
-				CD8B3BFD1AC58AB50013862E /* FlagRecognition WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0220C5451C46B468005CB538 /* _MSCountry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSCountry.h; sourceTree = "<group>"; };
+		0220C5461C46B468005CB538 /* _MSCountry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSCountry.m; sourceTree = "<group>"; };
+		0220C5471C46B468005CB538 /* _MSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSEvent.h; sourceTree = "<group>"; };
+		0220C5481C46B468005CB538 /* _MSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSEvent.m; sourceTree = "<group>"; };
+		0220C5491C46B468005CB538 /* _MSLeague.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSLeague.h; sourceTree = "<group>"; };
+		0220C54A1C46B468005CB538 /* _MSLeague.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSLeague.m; sourceTree = "<group>"; };
+		0220C54B1C46B468005CB538 /* _MSLeagueTeamResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSLeagueTeamResult.h; sourceTree = "<group>"; };
+		0220C54C1C46B468005CB538 /* _MSLeagueTeamResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSLeagueTeamResult.m; sourceTree = "<group>"; };
+		0220C54D1C46B468005CB538 /* _MSMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSMatch.h; sourceTree = "<group>"; };
+		0220C54E1C46B468005CB538 /* _MSMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSMatch.m; sourceTree = "<group>"; };
+		0220C54F1C46B468005CB538 /* _MSPerishableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSPerishableEntity.h; sourceTree = "<group>"; };
+		0220C5501C46B468005CB538 /* _MSPerishableEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSPerishableEntity.m; sourceTree = "<group>"; };
+		0220C5511C46B468005CB538 /* _MSPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSPlayer.h; sourceTree = "<group>"; };
+		0220C5521C46B468005CB538 /* _MSPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSPlayer.m; sourceTree = "<group>"; };
+		0220C5531C46B468005CB538 /* _MSPlayerProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSPlayerProgress.h; sourceTree = "<group>"; };
+		0220C5541C46B468005CB538 /* _MSPlayerProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSPlayerProgress.m; sourceTree = "<group>"; };
+		0220C5551C46B468005CB538 /* _MSTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSTeam.h; sourceTree = "<group>"; };
+		0220C5561C46B468005CB538 /* _MSTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSTeam.m; sourceTree = "<group>"; };
 		5712F67E18E0953B009A0731 /* MSLoadingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLoadingTableViewCell.h; sourceTree = "<group>"; };
 		5712F67F18E0953B009A0731 /* MSLoadingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLoadingTableViewCell.m; sourceTree = "<group>"; };
 		5712F68118E09548009A0731 /* MSLoadingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSLoadingTableViewCell.xib; sourceTree = "<group>"; };
@@ -527,8 +544,6 @@
 		5F67D57718DCA74800195524 /* footballGrass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = footballGrass.png; sourceTree = "<group>"; };
 		790F7D8C15DD4364007C45F8 /* DB_JSON.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DB_JSON.txt; sourceTree = "<group>"; };
 		790F7D8E15DE277B007C45F8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		7F37B0871B39696F0082E1ED /* _MSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _MSEvent.h; path = ../../../_MSEvent.h; sourceTree = "<group>"; };
-		7F37B0881B39696F0082E1ED /* _MSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _MSEvent.m; path = ../../../_MSEvent.m; sourceTree = "<group>"; };
 		7FD14E5A1B3436C20000ECA5 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		7FD14E5B1B3436C20000ECA5 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		7FEC427A1B3AF10900B2DCBB /* MSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSEvent.h; sourceTree = "<group>"; };
@@ -674,22 +689,6 @@
 		CD7FA5601ACEAF63005D2E2C /* MSPlayerProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPlayerProgress.m; sourceTree = "<group>"; };
 		CD7FA5611ACEAF63005D2E2C /* MSTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTeam.h; sourceTree = "<group>"; };
 		CD7FA5621ACEAF63005D2E2C /* MSTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTeam.m; sourceTree = "<group>"; };
-		CD7FA5641ACEAF63005D2E2C /* _MSCountry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSCountry.h; sourceTree = "<group>"; };
-		CD7FA5651ACEAF63005D2E2C /* _MSCountry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSCountry.m; sourceTree = "<group>"; };
-		CD7FA5661ACEAF63005D2E2C /* _MSLeague.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSLeague.h; sourceTree = "<group>"; };
-		CD7FA5671ACEAF63005D2E2C /* _MSLeague.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSLeague.m; sourceTree = "<group>"; };
-		CD7FA5681ACEAF63005D2E2C /* _MSLeagueTeamResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSLeagueTeamResult.h; sourceTree = "<group>"; };
-		CD7FA5691ACEAF63005D2E2C /* _MSLeagueTeamResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSLeagueTeamResult.m; sourceTree = "<group>"; };
-		CD7FA56A1ACEAF63005D2E2C /* _MSMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSMatch.h; sourceTree = "<group>"; };
-		CD7FA56B1ACEAF63005D2E2C /* _MSMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSMatch.m; sourceTree = "<group>"; };
-		CD7FA56C1ACEAF63005D2E2C /* _MSPerishableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSPerishableEntity.h; sourceTree = "<group>"; };
-		CD7FA56D1ACEAF63005D2E2C /* _MSPerishableEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSPerishableEntity.m; sourceTree = "<group>"; };
-		CD7FA56E1ACEAF63005D2E2C /* _MSPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSPlayer.h; sourceTree = "<group>"; };
-		CD7FA56F1ACEAF63005D2E2C /* _MSPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSPlayer.m; sourceTree = "<group>"; };
-		CD7FA5701ACEAF63005D2E2C /* _MSPlayerProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSPlayerProgress.h; sourceTree = "<group>"; };
-		CD7FA5711ACEAF63005D2E2C /* _MSPlayerProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSPlayerProgress.m; sourceTree = "<group>"; };
-		CD7FA5721ACEAF63005D2E2C /* _MSTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSTeam.h; sourceTree = "<group>"; };
-		CD7FA5731ACEAF63005D2E2C /* _MSTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSTeam.m; sourceTree = "<group>"; };
 		CD7FA5751ACEAF63005D2E2C /* MSDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDataManager.h; sourceTree = "<group>"; };
 		CD7FA5761ACEAF63005D2E2C /* MSDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDataManager.m; sourceTree = "<group>"; };
 		CD7FA5781ACEAF63005D2E2C /* MSModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MSModel.xcdatamodel; sourceTree = "<group>"; };
@@ -1588,24 +1587,24 @@
 		CD7FA5631ACEAF63005D2E2C /* Machine */ = {
 			isa = PBXGroup;
 			children = (
-				7F37B0871B39696F0082E1ED /* _MSEvent.h */,
-				7F37B0881B39696F0082E1ED /* _MSEvent.m */,
-				CD7FA5641ACEAF63005D2E2C /* _MSCountry.h */,
-				CD7FA5651ACEAF63005D2E2C /* _MSCountry.m */,
-				CD7FA5661ACEAF63005D2E2C /* _MSLeague.h */,
-				CD7FA5671ACEAF63005D2E2C /* _MSLeague.m */,
-				CD7FA5681ACEAF63005D2E2C /* _MSLeagueTeamResult.h */,
-				CD7FA5691ACEAF63005D2E2C /* _MSLeagueTeamResult.m */,
-				CD7FA56A1ACEAF63005D2E2C /* _MSMatch.h */,
-				CD7FA56B1ACEAF63005D2E2C /* _MSMatch.m */,
-				CD7FA56C1ACEAF63005D2E2C /* _MSPerishableEntity.h */,
-				CD7FA56D1ACEAF63005D2E2C /* _MSPerishableEntity.m */,
-				CD7FA56E1ACEAF63005D2E2C /* _MSPlayer.h */,
-				CD7FA56F1ACEAF63005D2E2C /* _MSPlayer.m */,
-				CD7FA5701ACEAF63005D2E2C /* _MSPlayerProgress.h */,
-				CD7FA5711ACEAF63005D2E2C /* _MSPlayerProgress.m */,
-				CD7FA5721ACEAF63005D2E2C /* _MSTeam.h */,
-				CD7FA5731ACEAF63005D2E2C /* _MSTeam.m */,
+				0220C5451C46B468005CB538 /* _MSCountry.h */,
+				0220C5461C46B468005CB538 /* _MSCountry.m */,
+				0220C5471C46B468005CB538 /* _MSEvent.h */,
+				0220C5481C46B468005CB538 /* _MSEvent.m */,
+				0220C5491C46B468005CB538 /* _MSLeague.h */,
+				0220C54A1C46B468005CB538 /* _MSLeague.m */,
+				0220C54B1C46B468005CB538 /* _MSLeagueTeamResult.h */,
+				0220C54C1C46B468005CB538 /* _MSLeagueTeamResult.m */,
+				0220C54D1C46B468005CB538 /* _MSMatch.h */,
+				0220C54E1C46B468005CB538 /* _MSMatch.m */,
+				0220C54F1C46B468005CB538 /* _MSPerishableEntity.h */,
+				0220C5501C46B468005CB538 /* _MSPerishableEntity.m */,
+				0220C5511C46B468005CB538 /* _MSPlayer.h */,
+				0220C5521C46B468005CB538 /* _MSPlayer.m */,
+				0220C5531C46B468005CB538 /* _MSPlayerProgress.h */,
+				0220C5541C46B468005CB538 /* _MSPlayerProgress.m */,
+				0220C5551C46B468005CB538 /* _MSTeam.h */,
+				0220C5561C46B468005CB538 /* _MSTeam.m */,
 			);
 			path = Machine;
 			sourceTree = "<group>";
@@ -1948,15 +1947,15 @@
 				82A16593149907C100B8AEB4 /* Sources */,
 				82A16594149907C100B8AEB4 /* Frameworks */,
 				82A16595149907C100B8AEB4 /* Resources */,
-				CD8B3C041AC58AB50013862E /* Embed App Extensions */,
 				CD7FA3B01ACE936F005D2E2C /* Embed Frameworks */,
 				CD34E9271AD693DB0026270E /* ShellScript */,
+				02ECB4E91C341E3F00ECCC4D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CD8B3BFC1AC58AB50013862E /* PBXTargetDependency */,
-				CD8B3C151AC58AEE0013862E /* PBXTargetDependency */,
+				02ECB4E51C341E3F00ECCC4D /* PBXTargetDependency */,
+				02ECB4E81C341E3F00ECCC4D /* PBXTargetDependency */,
 			);
 			name = FlagRecognizer;
 			productName = Demo;
@@ -2220,7 +2219,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run 739ea3beb4071c53acef5de03f2fe30f3995020e c2a6e0102bbe7069ca4a69461c95caeeb0d242d6909ee3015346c81dc63f5e9c";
+			shellScript = "./Fabric.framework/run 7caf6c4104d2f3f27750f22a013ce667367988a0 4cb7e5fc774411adf3d688a68094a8ad4bd67c0596ad518ab8b1a8ae4abc284e";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2229,9 +2228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B0295F18A44DC9003B3679 /* Storyboard.storyboard in Sources */,
 				CD7FA6951ACEAF63005D2E2C /* NSPersistentStore+MagicalRecord.m in Sources */,
 				CD7FA6231ACEAF63005D2E2C /* MSDataManager.m in Sources */,
+				0220C5601C46B468005CB538 /* _MSLeagueTeamResult.m in Sources */,
+				0220C5661C46B468005CB538 /* _MSPerishableEntity.m in Sources */,
 				82A165A8149907C200B8AEB4 /* main.m in Sources */,
 				CD7FA6891ACEAF63005D2E2C /* NSManagedObjectContext+MagicalRecord.m in Sources */,
 				82A165AC149907C200B8AEB4 /* MSAppDelegate.m in Sources */,
@@ -2252,6 +2252,7 @@
 				8A13A72D1A645D1B006A4632 /* SVIndefiniteAnimatedView.m in Sources */,
 				CD7FA6801ACEAF63005D2E2C /* NSManagedObject+MagicalRecord.m in Sources */,
 				7FEC427C1B3AF10900B2DCBB /* MSEvent.m in Sources */,
+				0220C55A1C46B468005CB538 /* _MSEvent.m in Sources */,
 				CD7FA6741ACEAF63005D2E2C /* NSString+MagicalDataImport.m in Sources */,
 				CD7FA68C1ACEAF63005D2E2C /* NSManagedObjectContext+MagicalSaves.m in Sources */,
 				CD7FA65F1ACEAF63005D2E2C /* UIWebView+AFNetworking.m in Sources */,
@@ -2264,17 +2265,15 @@
 				CD7FA67A1ACEAF63005D2E2C /* NSManagedObject+MagicalDataImport.m in Sources */,
 				CD7FA6B01ACEAF63005D2E2C /* MSSettings.m in Sources */,
 				CD7FA6921ACEAF63005D2E2C /* NSManagedObjectModel+MagicalRecord.m in Sources */,
+				0220C5571C46B468005CB538 /* _MSCountry.m in Sources */,
 				8ACAC7AF1A4C97FA007320BF /* MSLeagueRaitingHeader.m in Sources */,
 				CD7FA6AA1ACEAF63005D2E2C /* MagicalRecord+ShorthandSupport.m in Sources */,
 				840086F918B5DFA4007B31D8 /* MSPlayerStatisticCell.m in Sources */,
 				8AD2A93F1A42EFF100D2E3FF /* MSFlurryAnalytics.m in Sources */,
 				CD7FA6081ACEAF63005D2E2C /* MSTeam.m in Sources */,
-				CD7FA60E1ACEAF63005D2E2C /* _MSLeague.m in Sources */,
 				CD7FA68F1ACEAF63005D2E2C /* NSManagedObjectContext+MagicalThreading.m in Sources */,
 				CDF402C21ADD267F005616CA /* NSUserDefaults+AppGroup.m in Sources */,
-				CD7FA6171ACEAF63005D2E2C /* _MSPerishableEntity.m in Sources */,
 				84B0296218A4FD5C003B3679 /* UIViewController+MSActivityIndicator.m in Sources */,
-				CD7FA6141ACEAF63005D2E2C /* _MSMatch.m in Sources */,
 				CD7FA6681ACEAF63005D2E2C /* NSEntityDescription+MagicalDataImport.m in Sources */,
 				CD7FA6561ACEAF63005D2E2C /* UIImageView+AFNetworking.m in Sources */,
 				5727695518D8719700CCDFB5 /* MSBaseDataViewController.m in Sources */,
@@ -2298,7 +2297,6 @@
 				CD7FA6471ACEAF63005D2E2C /* AFURLSessionManager.m in Sources */,
 				CD7FA6861ACEAF63005D2E2C /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				CD7FA64D1ACEAF63005D2E2C /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				CD7FA61D1ACEAF63005D2E2C /* _MSPlayerProgress.m in Sources */,
 				CD7FA6A11ACEAF63005D2E2C /* MagicalRecord+iCloud.m in Sources */,
 				CD7FA6AD1ACEAF63005D2E2C /* MagicalRecord.m in Sources */,
 				CD7FA66E1ACEAF63005D2E2C /* NSObject+MagicalDataImport.m in Sources */,
@@ -2308,15 +2306,17 @@
 				CD7FA6321ACEAF63005D2E2C /* AFHTTPRequestOperationManager.m in Sources */,
 				CD7FA6981ACEAF63005D2E2C /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				84045AF118B2507E00D3CCC6 /* MSTableViewCell.m in Sources */,
-				CD7FA6111ACEAF63005D2E2C /* _MSLeagueTeamResult.m in Sources */,
 				5727695018D8717B00CCDFB5 /* MSLeagueCollectionViewCell.m in Sources */,
 				576E2E7018C8799E00694544 /* MSImageRecognitionEAGLView.mm in Sources */,
 				841CB07818B4F81E0033E13E /* MSPlayerDetailsViewController.m in Sources */,
 				CD7FA6A41ACEAF63005D2E2C /* MagicalRecord+Options.m in Sources */,
 				5727695218D8717B00CCDFB5 /* MSLeaguesCollectionViewController.m in Sources */,
 				9603A87F1A3F45F3001FFDDE /* HMSegmentedControl.m in Sources */,
+				0220C55D1C46B468005CB538 /* _MSLeague.m in Sources */,
 				CD7FA6621ACEAF63005D2E2C /* MagicalImportFunctions.m in Sources */,
 				CD7FA6A71ACEAF63005D2E2C /* MagicalRecord+Setup.m in Sources */,
+				0220C5631C46B468005CB538 /* _MSMatch.m in Sources */,
+				0220C56F1C46B468005CB538 /* _MSTeam.m in Sources */,
 				CD7FA5FC1ACEAF63005D2E2C /* MSMatch.m in Sources */,
 				CD7FA63B1ACEAF63005D2E2C /* AFSecurityPolicy.m in Sources */,
 				CD7FA6711ACEAF63005D2E2C /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
@@ -2326,21 +2326,19 @@
 				CD7FA67D1ACEAF63005D2E2C /* NSManagedObject+MagicalFinders.m in Sources */,
 				CD7FA63E1ACEAF63005D2E2C /* AFURLConnectionOperation.m in Sources */,
 				CD7FA65C1ACEAF63005D2E2C /* UIRefreshControl+AFNetworking.m in Sources */,
-				CD7FA6201ACEAF63005D2E2C /* _MSTeam.m in Sources */,
 				84045AEF18B2507E00D3CCC6 /* MSPlayerCell.m in Sources */,
 				CD7FA6411ACEAF63005D2E2C /* AFURLRequestSerialization.m in Sources */,
 				84B0296518A50044003B3679 /* MSActivityIndicatorView.m in Sources */,
 				CD7FA66B1ACEAF63005D2E2C /* NSNumber+MagicalDataImport.m in Sources */,
 				CD7FA6051ACEAF63005D2E2C /* MSPlayerProgress.m in Sources */,
+				0220C5691C46B468005CB538 /* _MSPlayer.m in Sources */,
 				CD7FA5F31ACEAF63005D2E2C /* MSCountry.m in Sources */,
-				7F37B0891B39696F0082E1ED /* _MSEvent.m in Sources */,
-				CD7FA60B1ACEAF63005D2E2C /* _MSCountry.m in Sources */,
-				CD7FA61A1ACEAF63005D2E2C /* _MSPlayer.m in Sources */,
 				CD7FA69B1ACEAF63005D2E2C /* MagicalRecord+Actions.m in Sources */,
 				CD5755071AB9AA8800B33D83 /* MSTeamTableViewCell.m in Sources */,
 				963D320F1A40350C00437C5E /* MSRoundedImageView.m in Sources */,
 				84B0295E18A44194003B3679 /* UIViewController+MSNavigationItem.m in Sources */,
 				CD7FA64A1ACEAF63005D2E2C /* AFNetworkActivityIndicatorManager.m in Sources */,
+				0220C56C1C46B468005CB538 /* _MSPlayerProgress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2355,22 +2353,27 @@
 				CD7FA5FD1ACEAF63005D2E2C /* MSMatch.m in Sources */,
 				CD7FA6601ACEAF63005D2E2C /* UIWebView+AFNetworking.m in Sources */,
 				CD7FA6331ACEAF63005D2E2C /* AFHTTPRequestOperationManager.m in Sources */,
+				0220C56A1C46B468005CB538 /* _MSPlayer.m in Sources */,
 				CD7FA6A81ACEAF63005D2E2C /* MagicalRecord+Setup.m in Sources */,
 				CD7FA68A1ACEAF63005D2E2C /* NSManagedObjectContext+MagicalRecord.m in Sources */,
 				CD7FA38C1ACD4A56005D2E2C /* MSMatchEventRowController.m in Sources */,
 				CD7FA6781ACEAF63005D2E2C /* NSManagedObject+MagicalAggregation.m in Sources */,
+				0220C55E1C46B468005CB538 /* _MSLeague.m in Sources */,
 				CD7FA6721ACEAF63005D2E2C /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
 				CD7FA5F11ACEAF63005D2E2C /* MSShowableData.m in Sources */,
+				0220C56D1C46B468005CB538 /* _MSPlayerProgress.m in Sources */,
 				CD7FA6961ACEAF63005D2E2C /* NSPersistentStore+MagicalRecord.m in Sources */,
 				CD7FA3811ACD4196005D2E2C /* MSMatchEventsInterfaceController.m in Sources */,
+				0220C5701C46B468005CB538 /* _MSTeam.m in Sources */,
 				CD7FA6241ACEAF63005D2E2C /* MSDataManager.m in Sources */,
 				CD7FA6901ACEAF63005D2E2C /* NSManagedObjectContext+MagicalThreading.m in Sources */,
 				CD7FA6AE1ACEAF63005D2E2C /* MagicalRecord.m in Sources */,
 				CD7FA5F41ACEAF63005D2E2C /* MSCountry.m in Sources */,
+				0220C5611C46B468005CB538 /* _MSLeagueTeamResult.m in Sources */,
 				CD7FA6481ACEAF63005D2E2C /* AFURLSessionManager.m in Sources */,
-				CD7FA61B1ACEAF63005D2E2C /* _MSPlayer.m in Sources */,
 				CD7FA6361ACEAF63005D2E2C /* AFHTTPSessionManager.m in Sources */,
 				CD7FA64E1ACEAF63005D2E2C /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				0220C5641C46B468005CB538 /* _MSMatch.m in Sources */,
 				CD7FA6451ACEAF63005D2E2C /* AFURLResponseSerialization.m in Sources */,
 				CD7FA6301ACEAF63005D2E2C /* AFHTTPRequestOperation.m in Sources */,
 				CD7FA6AB1ACEAF63005D2E2C /* MagicalRecord+ShorthandSupport.m in Sources */,
@@ -2385,41 +2388,36 @@
 				CD7FA65D1ACEAF63005D2E2C /* UIRefreshControl+AFNetworking.m in Sources */,
 				CD7FA5FA1ACEAF63005D2E2C /* MSLeagueTeamResult.m in Sources */,
 				CD7FA6571ACEAF63005D2E2C /* UIImageView+AFNetworking.m in Sources */,
-				CD7FA6211ACEAF63005D2E2C /* _MSTeam.m in Sources */,
 				CD7FA6631ACEAF63005D2E2C /* MagicalImportFunctions.m in Sources */,
-				CD7FA6151ACEAF63005D2E2C /* _MSMatch.m in Sources */,
 				CD7FA6A21ACEAF63005D2E2C /* MagicalRecord+iCloud.m in Sources */,
+				0220C5581C46B468005CB538 /* _MSCountry.m in Sources */,
 				CD7FA6991ACEAF63005D2E2C /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				CD7FA3821ACD4196005D2E2C /* MSMatchInterfaceController.m in Sources */,
 				CD7FA68D1ACEAF63005D2E2C /* NSManagedObjectContext+MagicalSaves.m in Sources */,
 				CD7FA6931ACEAF63005D2E2C /* NSManagedObjectModel+MagicalRecord.m in Sources */,
 				CD7FA6841ACEAF63005D2E2C /* NSManagedObject+MagicalRequests.m in Sources */,
 				CD7FA65A1ACEAF63005D2E2C /* UIProgressView+AFNetworking.m in Sources */,
-				CD7FA60F1ACEAF63005D2E2C /* _MSLeague.m in Sources */,
 				CD7FA62A1ACEAF63005D2E2C /* HTTPClientManager.m in Sources */,
 				CD7FA67B1ACEAF63005D2E2C /* NSManagedObject+MagicalDataImport.m in Sources */,
 				CD7FA69C1ACEAF63005D2E2C /* MagicalRecord+Actions.m in Sources */,
 				CD7FA6091ACEAF63005D2E2C /* MSTeam.m in Sources */,
 				CD7FA6061ACEAF63005D2E2C /* MSPlayerProgress.m in Sources */,
-				CD7FA60C1ACEAF63005D2E2C /* _MSCountry.m in Sources */,
+				0220C55B1C46B468005CB538 /* _MSEvent.m in Sources */,
 				CD7FA6691ACEAF63005D2E2C /* NSEntityDescription+MagicalDataImport.m in Sources */,
 				CD7FA6391ACEAF63005D2E2C /* AFNetworkReachabilityManager.m in Sources */,
-				CD7FA6181ACEAF63005D2E2C /* _MSPerishableEntity.m in Sources */,
 				CD7FA6001ACEAF63005D2E2C /* MSPerishableEntity.m in Sources */,
+				0220C5671C46B468005CB538 /* _MSPerishableEntity.m in Sources */,
 				CD7FA6751ACEAF63005D2E2C /* NSString+MagicalDataImport.m in Sources */,
 				CD7FA63F1ACEAF63005D2E2C /* AFURLConnectionOperation.m in Sources */,
 				CD7FA66C1ACEAF63005D2E2C /* NSNumber+MagicalDataImport.m in Sources */,
 				CD7FA6811ACEAF63005D2E2C /* NSManagedObject+MagicalRecord.m in Sources */,
-				CD7FA6121ACEAF63005D2E2C /* _MSLeagueTeamResult.m in Sources */,
 				CD785AF31AD55CCE00AEBF6D /* MagicalRecord+AppGroup.m in Sources */,
 				CD7FA5EE1ACEAF63005D2E2C /* NSDate+MSExtensions.m in Sources */,
 				CD7FA69F1ACEAF63005D2E2C /* MagicalRecord+ErrorHandling.m in Sources */,
-				CD7FA61E1ACEAF63005D2E2C /* _MSPlayerProgress.m in Sources */,
 				CD7FA6271ACEAF63005D2E2C /* MSModel.xcdatamodeld in Sources */,
 				CD7FA6541ACEAF63005D2E2C /* UIButton+AFNetworking.m in Sources */,
 				CD7FA6031ACEAF63005D2E2C /* MSPlayer.m in Sources */,
 				CD7FA63C1ACEAF63005D2E2C /* AFSecurityPolicy.m in Sources */,
-				7F37B08A1B39696F0082E1ED /* _MSEvent.m in Sources */,
 				CD7FA37F1ACD4196005D2E2C /* MSMatchDetailInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2433,34 +2431,36 @@
 				CD7FA5F21ACEAF63005D2E2C /* MSShowableData.m in Sources */,
 				CD7FA6551ACEAF63005D2E2C /* UIButton+AFNetworking.m in Sources */,
 				CD7FA5F81ACEAF63005D2E2C /* MSLeague.m in Sources */,
-				CD7FA61C1ACEAF63005D2E2C /* _MSPlayer.m in Sources */,
 				CD7FA6671ACEAF63005D2E2C /* NSAttributeDescription+MagicalDataImport.m in Sources */,
-				CD7FA60D1ACEAF63005D2E2C /* _MSCountry.m in Sources */,
 				CD7FA6A01ACEAF63005D2E2C /* MagicalRecord+ErrorHandling.m in Sources */,
 				CD7FA6401ACEAF63005D2E2C /* AFURLConnectionOperation.m in Sources */,
+				0220C5621C46B468005CB538 /* _MSLeagueTeamResult.m in Sources */,
 				CD7FA5FB1ACEAF63005D2E2C /* MSLeagueTeamResult.m in Sources */,
 				CD7FA6B81AD2D599005D2E2C /* MSTodayTableViewCell.m in Sources */,
-				CD7FA6101ACEAF63005D2E2C /* _MSLeague.m in Sources */,
 				CD7FA6011ACEAF63005D2E2C /* MSPerishableEntity.m in Sources */,
 				CD7FA6821ACEAF63005D2E2C /* NSManagedObject+MagicalRecord.m in Sources */,
+				0220C55C1C46B468005CB538 /* _MSEvent.m in Sources */,
+				0220C5651C46B468005CB538 /* _MSMatch.m in Sources */,
 				CD7FA6611ACEAF63005D2E2C /* UIWebView+AFNetworking.m in Sources */,
 				CD7FA6701ACEAF63005D2E2C /* NSObject+MagicalDataImport.m in Sources */,
 				CD7FA6491ACEAF63005D2E2C /* AFURLSessionManager.m in Sources */,
 				CD7FA6581ACEAF63005D2E2C /* UIImageView+AFNetworking.m in Sources */,
 				CD7FA5EF1ACEAF63005D2E2C /* NSDate+MSExtensions.m in Sources */,
 				CD7FA69D1ACEAF63005D2E2C /* MagicalRecord+Actions.m in Sources */,
+				0220C55F1C46B468005CB538 /* _MSLeague.m in Sources */,
 				CD7FA6071ACEAF63005D2E2C /* MSPlayerProgress.m in Sources */,
 				CD7FA64F1ACEAF63005D2E2C /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				CD7FA6911ACEAF63005D2E2C /* NSManagedObjectContext+MagicalThreading.m in Sources */,
 				CD7FA6761ACEAF63005D2E2C /* NSString+MagicalDataImport.m in Sources */,
+				0220C56B1C46B468005CB538 /* _MSPlayer.m in Sources */,
 				CD7FA6AF1ACEAF63005D2E2C /* MagicalRecord.m in Sources */,
+				0220C5681C46B468005CB538 /* _MSPerishableEntity.m in Sources */,
 				CD7FA6A31ACEAF63005D2E2C /* MagicalRecord+iCloud.m in Sources */,
 				CD7FA6851ACEAF63005D2E2C /* NSManagedObject+MagicalRequests.m in Sources */,
 				CD7FA6941ACEAF63005D2E2C /* NSManagedObjectModel+MagicalRecord.m in Sources */,
 				CD7FA6791ACEAF63005D2E2C /* NSManagedObject+MagicalAggregation.m in Sources */,
 				CD7FA5F51ACEAF63005D2E2C /* MSCountry.m in Sources */,
 				CD7FA62B1ACEAF63005D2E2C /* HTTPClientManager.m in Sources */,
-				CD7FA6161ACEAF63005D2E2C /* _MSMatch.m in Sources */,
 				CD7FA6731ACEAF63005D2E2C /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
 				CD7FA65E1ACEAF63005D2E2C /* UIRefreshControl+AFNetworking.m in Sources */,
 				CD7FA6461ACEAF63005D2E2C /* AFURLResponseSerialization.m in Sources */,
@@ -2473,27 +2473,25 @@
 				CD7FA6311ACEAF63005D2E2C /* AFHTTPRequestOperation.m in Sources */,
 				CD785AF41AD55CCE00AEBF6D /* MagicalRecord+AppGroup.m in Sources */,
 				CD8B3C111AC58AEE0013862E /* MSTodayViewController.m in Sources */,
+				0220C56E1C46B468005CB538 /* _MSPlayerProgress.m in Sources */,
 				CD7FA6B21ACEAF63005D2E2C /* MSSettings.m in Sources */,
-				CD7FA6191ACEAF63005D2E2C /* _MSPerishableEntity.m in Sources */,
+				0220C5711C46B468005CB538 /* _MSTeam.m in Sources */,
 				CD7FA6041ACEAF63005D2E2C /* MSPlayer.m in Sources */,
 				CD7FA60A1ACEAF63005D2E2C /* MSTeam.m in Sources */,
 				CD7FA63A1ACEAF63005D2E2C /* AFNetworkReachabilityManager.m in Sources */,
 				CD7FA6251ACEAF63005D2E2C /* MSDataManager.m in Sources */,
 				CD7FA67C1ACEAF63005D2E2C /* NSManagedObject+MagicalDataImport.m in Sources */,
-				CD7FA61F1ACEAF63005D2E2C /* _MSPlayerProgress.m in Sources */,
-				CD7FA6131ACEAF63005D2E2C /* _MSLeagueTeamResult.m in Sources */,
-				7F37B08B1B39696F0082E1ED /* _MSEvent.m in Sources */,
 				CD7FA6281ACEAF63005D2E2C /* MSModel.xcdatamodeld in Sources */,
 				CD7FA5FE1ACEAF63005D2E2C /* MSMatch.m in Sources */,
 				CD7FA6971ACEAF63005D2E2C /* NSPersistentStore+MagicalRecord.m in Sources */,
 				CD7FA6431ACEAF63005D2E2C /* AFURLRequestSerialization.m in Sources */,
 				CD7FA6A61ACEAF63005D2E2C /* MagicalRecord+Options.m in Sources */,
 				CD7FA6A91ACEAF63005D2E2C /* MagicalRecord+Setup.m in Sources */,
-				CD7FA6221ACEAF63005D2E2C /* _MSTeam.m in Sources */,
 				CD7FA6371ACEAF63005D2E2C /* AFHTTPSessionManager.m in Sources */,
 				CD7FA68B1ACEAF63005D2E2C /* NSManagedObjectContext+MagicalRecord.m in Sources */,
 				CD7FA69A1ACEAF63005D2E2C /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				CDF402C41ADD267F005616CA /* NSUserDefaults+AppGroup.m in Sources */,
+				0220C5591C46B468005CB538 /* _MSCountry.m in Sources */,
 				CD7FA6881ACEAF63005D2E2C /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				7FEC427E1B3AF10900B2DCBB /* MSEvent.m in Sources */,
 				CD7FA66D1ACEAF63005D2E2C /* NSNumber+MagicalDataImport.m in Sources */,
@@ -2503,20 +2501,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		02ECB4E51C341E3F00ECCC4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD8B3BDF1AC58AB50013862E /* FlagRecognition WatchKit Extension */;
+			targetProxy = 02ECB4E41C341E3F00ECCC4D /* PBXContainerItemProxy */;
+		};
+		02ECB4E81C341E3F00ECCC4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD8B3C081AC58AEE0013862E /* FlagRecognition Today Extension */;
+			targetProxy = 02ECB4E71C341E3F00ECCC4D /* PBXContainerItemProxy */;
+		};
 		CD8B3BF21AC58AB50013862E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CD8B3BEE1AC58AB50013862E /* FlagRecognition WatchKit App */;
 			targetProxy = CD8B3BF11AC58AB50013862E /* PBXContainerItemProxy */;
-		};
-		CD8B3BFC1AC58AB50013862E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CD8B3BDF1AC58AB50013862E /* FlagRecognition WatchKit Extension */;
-			targetProxy = CD8B3BFB1AC58AB50013862E /* PBXContainerItemProxy */;
-		};
-		CD8B3C151AC58AEE0013862E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CD8B3C081AC58AEE0013862E /* FlagRecognition Today Extension */;
-			targetProxy = CD8B3C141AC58AEE0013862E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2551,8 +2549,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mykyta Karpyshyn (S65YRCVY2L)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mykyta Karpyshyn (S65YRCVY2L)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2574,8 +2572,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "ae66365d-a0a1-4deb-93d7-ec1795505c28";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ae66365d-a0a1-4deb-93d7-ec1795505c28";
+				PROVISIONING_PROFILE = "b56e4110-66df-4993-a94e-dc304c5f09f3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "b56e4110-66df-4993-a94e-dc304c5f09f3";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -2591,8 +2589,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mykyta Karpyshyn (S65YRCVY2L)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mykyta Karpyshyn (S65YRCVY2L)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2607,8 +2605,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "b56e4110-66df-4993-a94e-dc304c5f09f3";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "b56e4110-66df-4993-a94e-dc304c5f09f3";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2622,8 +2620,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = FlagsRecognizer.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daria Shabadash (49ULM952KG)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -2652,8 +2651,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = FlagsRecognizer;
-				PROVISIONING_PROFILE = "1aadd081-5cf7-42d7-bac7-9ad0675405fc";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1aadd081-5cf7-42d7-bac7-9ad0675405fc";
+				PROVISIONING_PROFILE = "2ee7876d-4391-4419-858c-37210685c036";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2ee7876d-4391-4419-858c-37210685c036";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -2668,8 +2667,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = FlagsRecognizer.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daria Shabadash (49ULM952KG)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -2697,8 +2697,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = FlagsRecognizer;
-				PROVISIONING_PROFILE = "1aadd081-5cf7-42d7-bac7-9ad0675405fc";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1aadd081-5cf7-42d7-bac7-9ad0675405fc";
+				PROVISIONING_PROFILE = "2ee7876d-4391-4419-858c-37210685c036";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2ee7876d-4391-4419-858c-37210685c036";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
@@ -2735,8 +2735,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daria Shabadash (49ULM952KG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -2748,7 +2748,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f8413e92-e9df-41e2-b160-63b8f8d39900";
+				PROVISIONING_PROFILE = "a445db7f-116c-4e67-8912-f4f0af432493";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -2765,8 +2765,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daria Shabadash (49ULM952KG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -2776,7 +2776,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f8413e92-e9df-41e2-b160-63b8f8d39900";
+				PROVISIONING_PROFILE = "a445db7f-116c-4e67-8912-f4f0af432493";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -2793,8 +2793,8 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_ENTITLEMENTS = "FlagRecognition WatchKit Extension/FlagRecognition WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daria Shabadash (49ULM952KG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2811,8 +2811,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "a2b79684-2953-44ca-96d7-2eb2c9dd48ef";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "a2b79684-2953-44ca-96d7-2eb2c9dd48ef";
+				PROVISIONING_PROFILE = "d4cfcc72-3dc0-4664-9f7f-d8789e2cc246";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "d4cfcc72-3dc0-4664-9f7f-d8789e2cc246";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -2827,8 +2827,8 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_ENTITLEMENTS = "FlagRecognition WatchKit Extension/FlagRecognition WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daria Shabadash (49ULM952KG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2843,8 +2843,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "a2b79684-2953-44ca-96d7-2eb2c9dd48ef";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "a2b79684-2953-44ca-96d7-2eb2c9dd48ef";
+				PROVISIONING_PROFILE = "d4cfcc72-3dc0-4664-9f7f-d8789e2cc246";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "d4cfcc72-3dc0-4664-9f7f-d8789e2cc246";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -2859,8 +2859,9 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_ENTITLEMENTS = "FlagRecognition Today Extension/TodayExtension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daria Shabadash (49ULM952KG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -2873,12 +2874,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "FlagRecognition Today Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = TodayExtension;
-				PROVISIONING_PROFILE = "02e02193-5103-4cc0-86da-9c5c97d08f6c";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "02e02193-5103-4cc0-86da-9c5c97d08f6c";
+				PROVISIONING_PROFILE = "de1f14c5-9150-412b-bb3a-e3a2868cfd2b";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "de1f14c5-9150-412b-bb3a-e3a2868cfd2b";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -2893,9 +2894,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CODE_SIGN_ENTITLEMENTS = "FlagRecognition Today Extension/TodayExtension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daria Shabadash (49ULM952KG)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daria Shabadash (49ULM952KG)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2905,12 +2907,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "FlagRecognition Today Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = TodayExtension;
-				PROVISIONING_PROFILE = "02e02193-5103-4cc0-86da-9c5c97d08f6c";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "02e02193-5103-4cc0-86da-9c5c97d08f6c";
+				PROVISIONING_PROFILE = "de1f14c5-9150-412b-bb3a-e3a2868cfd2b";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "de1f14c5-9150-412b-bb3a-e3a2868cfd2b";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

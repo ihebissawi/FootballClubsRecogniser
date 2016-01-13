@@ -30,18 +30,18 @@ extern const struct MSPlayerAttributes {
 } MSPlayerAttributes;
 
 extern const struct MSPlayerRelationships {
+	__unsafe_unretained NSString *playerEvents;
 	__unsafe_unretained NSString *seasonsResults;
 	__unsafe_unretained NSString *team;
-    __unsafe_unretained NSString *playerEvents;
 } MSPlayerRelationships;
 
 extern const struct MSPlayerUserInfo {
 	__unsafe_unretained NSString *relatedByAttribute;
 } MSPlayerUserInfo;
 
+@class MSEvent;
 @class MSPlayerProgress;
 @class MSTeam;
-@class MSEvent;
 
 @interface MSPlayerID : MSPerishableEntityID {}
 @end
@@ -140,16 +140,25 @@ extern const struct MSPlayerUserInfo {
 
 //- (BOOL)validateWeight:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) NSSet *playerEvents;
+
+- (NSMutableSet*)playerEventsSet;
+
 @property (nonatomic, strong) NSSet *seasonsResults;
 
 - (NSMutableSet*)seasonsResultsSet;
 
 @property (nonatomic, strong) MSTeam *team;
 
-@property (nonatomic, strong) NSSet* playerEvents;
-
-
 //- (BOOL)validateTeam:(id*)value_ error:(NSError**)error_;
+
+@end
+
+@interface _MSPlayer (PlayerEventsCoreDataGeneratedAccessors)
+- (void)addPlayerEvents:(NSSet*)value_;
+- (void)removePlayerEvents:(NSSet*)value_;
+- (void)addPlayerEventsObject:(MSEvent*)value_;
+- (void)removePlayerEventsObject:(MSEvent*)value_;
 
 @end
 
@@ -158,13 +167,6 @@ extern const struct MSPlayerUserInfo {
 - (void)removeSeasonsResults:(NSSet*)value_;
 - (void)addSeasonsResultsObject:(MSPlayerProgress*)value_;
 - (void)removeSeasonsResultsObject:(MSPlayerProgress*)value_;
-@end
-
-@interface _MSPlayer (PlayerEventsCoreDataGeneratedAccessors)
-- (void)addPlayerEventsObject:(MSEvent *)value;
-- (void)removePlayerEventsObject:(MSEvent *)value;
-- (void)addPlayerEvents:(NSSet *)values;
-- (void)removePlayerEvents:(NSSet *)values;
 
 @end
 
@@ -236,15 +238,13 @@ extern const struct MSPlayerUserInfo {
 - (NSString*)primitiveWeight;
 - (void)setPrimitiveWeight:(NSString*)value;
 
-- (NSMutableSet*)primitiveSeasonsResults;
-- (void)setPrimitiveSeasonsResults:(NSMutableSet*)value;
-
 - (NSMutableSet*)primitivePlayerEvents;
 - (void)setPrimitivePlayerEvents:(NSMutableSet*)value;
 
+- (NSMutableSet*)primitiveSeasonsResults;
+- (void)setPrimitiveSeasonsResults:(NSMutableSet*)value;
+
 - (MSTeam*)primitiveTeam;
 - (void)setPrimitiveTeam:(MSTeam*)value;
-
-
 
 @end

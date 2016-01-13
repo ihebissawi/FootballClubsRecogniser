@@ -29,9 +29,9 @@ const struct MSPlayerAttributes MSPlayerAttributes = {
 };
 
 const struct MSPlayerRelationships MSPlayerRelationships = {
+	.playerEvents = @"playerEvents",
 	.seasonsResults = @"seasonsResults",
 	.team = @"team",
-    .playerEvents = @"playerEvents"
 };
 
 const struct MSPlayerUserInfo MSPlayerUserInfo = {
@@ -111,6 +111,17 @@ const struct MSPlayerUserInfo MSPlayerUserInfo = {
 
 @dynamic weight;
 
+@dynamic playerEvents;
+
+- (NSMutableSet*)playerEventsSet {
+	[self willAccessValueForKey:@"playerEvents"];
+
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"playerEvents"];
+
+	[self didAccessValueForKey:@"playerEvents"];
+	return result;
+}
+
 @dynamic seasonsResults;
 
 - (NSMutableSet*)seasonsResultsSet {
@@ -123,8 +134,6 @@ const struct MSPlayerUserInfo MSPlayerUserInfo = {
 }
 
 @dynamic team;
-
-@dynamic playerEvents;
 
 @end
 

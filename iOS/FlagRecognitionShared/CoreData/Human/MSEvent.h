@@ -9,5 +9,6 @@
 #import "_MSEvent.h"
 
 @interface MSEvent : _MSEvent
+- (void)foo;
 // Custom logic goes here.
 @end
