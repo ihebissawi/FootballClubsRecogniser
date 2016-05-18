@@ -7,10 +7,14 @@
 //
 
 #import "MSMatchEventsInterfaceController.h"
-
+#import "MSMatch.h"
+#import "MSTeam.h"
+#import "MSMatchEventRowController.h"
 
 @interface MSMatchEventsInterfaceController()
-
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceTable *tableView;
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *matchName;
+@property (nonatomic,strong) MSMatch * currentMatch;
 @end
 
 
@@ -20,6 +24,17 @@
     [super awakeWithContext:context];
     
     // Configure interface objects here.
+    
+    self.currentMatch = context;
+    [self.matchName setText:[[NSString alloc] initWithFormat:@"%@ vs %@",[self.currentMatch.teamHome shortNameOrName], [self.currentMatch.teamAway shortNameOrName]]];
+    NSArray * events = [self.currentMatch events];
+    if([events count] > 0){
+        [self.tableView setNumberOfRows:[events count] withRowType:@"EventCell"];
+        for(NSInteger i = 0; i < [events count]; i++){
+            MSMatchEventRowController * cell = [self.tableView rowControllerAtIndex:i];
+            [cell setMatchEvent:events[i]];
+        }
+    }
 }
 
 - (void)willActivate {

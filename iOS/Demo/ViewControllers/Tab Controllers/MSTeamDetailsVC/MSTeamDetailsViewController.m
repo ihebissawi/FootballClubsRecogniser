@@ -28,9 +28,13 @@
 #import "MSRoundedImageView.h"
 
 #import "MSTabBarController.h"
+
+#import "MSMatchDetailsViewController.h"
+
 NSString *const kMSTeamDetailsPushSegueIdentifier = @"pushTeamDetailSegue";
 NSString *const kMSTeamDetailsPushFromLeagueSegueIdentifier = @"pushTeamDetailsFromLeagueSegue";
 NSString *const kMSTeamDetailsVCIdentifier = @"TeamDetailsVC";
+NSString *const kMSMatchDetailsVCIdentifier = @"MatchDetailsVC";
 NSInteger const kMSTeamBaseInfoViewDefaultHeight = 78;
 
 typedef enum {
@@ -417,6 +421,14 @@ typedef enum {
                     [weakSelf showDetailsForTeamWithID:data];
                 };
             }
+            
+            if (!((MSMatchCell *)cell).didTapMatchDetailsButton) {
+                __weak MSTeamDetailsViewController *weakSelf = self;
+                ((MSMatchCell *)cell).didTapMatchDetailsButton = ^(id sender, id data) {
+                    [weakSelf showDetailesForMatch:data];
+                };
+            }
+
             [(MSMatchCell *)cell setUserTeamID:self.sourceTeam.iD];
         }
             break;
@@ -491,6 +503,12 @@ typedef enum {
                                  [UIAlertView MS_showErrorAlertWithError:error];
                              }
                          }];
+}
+
+- (void)showDetailesForMatch:(MSMatch *)match{
+    MSMatchDetailsViewController * matchVC = [self.storyboard instantiateViewControllerWithIdentifier:kMSMatchDetailsVCIdentifier];
+    matchVC.sourceMatch = match;
+    [self.navigationController pushViewController:matchVC animated:YES];
 }
 
 @end

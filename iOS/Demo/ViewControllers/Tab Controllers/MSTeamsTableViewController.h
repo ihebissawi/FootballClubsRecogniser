@@ -10,4 +10,6 @@
 
 @interface MSTeamsTableViewController : MSTableViewController
 
+- (void)navigateToMatchDetailsWithId:(NSString *)matchId;
+
 @end

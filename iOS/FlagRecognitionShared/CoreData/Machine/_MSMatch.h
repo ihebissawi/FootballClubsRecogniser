@@ -17,6 +17,7 @@ extern const struct MSMatchAttributes {
 	__unsafe_unretained NSString *teamHomeID;
 	__unsafe_unretained NSString *teamHomeName;
 	__unsafe_unretained NSString *timestamp;
+    __unsafe_unretained NSString *matchStatus;
 } MSMatchAttributes;
 
 extern const struct MSMatchRelationships {
@@ -90,6 +91,10 @@ extern const struct MSMatchUserInfo {
 
 //- (BOOL)validateTimestamp:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) NSString* matchStatus;
+
+//- (BOOL)validateMatchStatus:(id*)value_ error:(NSError**)error_;
+
 @property (nonatomic, strong) NSSet *matchEvents;
 
 - (NSMutableSet*)matchEventsSet;
@@ -149,6 +154,9 @@ extern const struct MSMatchUserInfo {
 
 - (NSString*)primitiveTimestamp;
 - (void)setPrimitiveTimestamp:(NSString*)value;
+
+- (NSString*)primitiveMatchStatus;
+- (void)setPrimitiveMatchStatus:(NSString*)value;
 
 - (NSMutableSet*)primitiveMatchEvents;
 - (void)setPrimitiveMatchEvents:(NSMutableSet*)value;

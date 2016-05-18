@@ -11,6 +11,7 @@
 @class MSSettings;
 @class MSCountry;
 @class MSTeam;
+@class MSMatch;
 @class MSPlayer;
 
 @interface MSDataManager : NSObject
@@ -67,4 +68,9 @@
 //for Extesnions
 - (void)requestLastMatchesForFavoriteTeamsForceUpdateFromServer:(BOOL)forceUpdateFromServer
 												 withCompletion:(MSCompletionBlockWithData)completion;
+
+
+- (void)requestEventsForMatch:(MSMatch *)match
+                   forceUpdateFromServer:(BOOL)forceUpdateFromServer
+                          withCompletion:(MSCompletionBlockWithData)completion;
 @end

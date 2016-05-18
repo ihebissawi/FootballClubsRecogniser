@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		02078E8A1C6B876300D8F9F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8B3BF91AC58AB50013862E /* Images.xcassets */; };
 		0220C5571C46B468005CB538 /* _MSCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5461C46B468005CB538 /* _MSCountry.m */; };
 		0220C5581C46B468005CB538 /* _MSCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5461C46B468005CB538 /* _MSCountry.m */; };
 		0220C5591C46B468005CB538 /* _MSCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5461C46B468005CB538 /* _MSCountry.m */; };
@@ -48,6 +49,12 @@
 		0220C56F1C46B468005CB538 /* _MSTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5561C46B468005CB538 /* _MSTeam.m */; };
 		0220C5701C46B468005CB538 /* _MSTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5561C46B468005CB538 /* _MSTeam.m */; };
 		0220C5711C46B468005CB538 /* _MSTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5561C46B468005CB538 /* _MSTeam.m */; };
+		0220C5781C483D7A005CB538 /* MSMatchDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C5771C483D7A005CB538 /* MSMatchDetailsViewController.m */; };
+		0220C57C1C483DF2005CB538 /* MSMatchDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0220C57B1C483DF2005CB538 /* MSMatchDetailsTableViewCell.m */; };
+		0220C57E1C483E25005CB538 /* MSMatchDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0220C57D1C483E25005CB538 /* MSMatchDetailsTableViewCell.xib */; };
+		0236FA5F1C5FD78E00FB6284 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8B3BF61AC58AB50013862E /* Interface.storyboard */; };
+		0236FA611C62550200FB6284 /* MSColorScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 96595EB31A31D106006239B1 /* MSColorScheme.m */; };
+		02D23F731C58F52300D663AB /* MSGoalRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D23F721C58F52300D663AB /* MSGoalRowController.m */; };
 		02ECB4E31C341E3F00ECCC4D /* FlagRecognition WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD8B3BE01AC58AB50013862E /* FlagRecognition WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		02ECB4E61C341E3F00ECCC4D /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD8B3C091AC58AEE0013862E /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5712F68018E0953B009A0731 /* MSLoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5712F67F18E0953B009A0731 /* MSLoadingTableViewCell.m */; };
@@ -460,6 +467,13 @@
 		0220C5541C46B468005CB538 /* _MSPlayerProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSPlayerProgress.m; sourceTree = "<group>"; };
 		0220C5551C46B468005CB538 /* _MSTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _MSTeam.h; sourceTree = "<group>"; };
 		0220C5561C46B468005CB538 /* _MSTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _MSTeam.m; sourceTree = "<group>"; };
+		0220C5761C483D7A005CB538 /* MSMatchDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSMatchDetailsViewController.h; path = ViewControllers/MSMatchDetailsVC/MSMatchDetailsViewController.h; sourceTree = "<group>"; };
+		0220C5771C483D7A005CB538 /* MSMatchDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSMatchDetailsViewController.m; path = ViewControllers/MSMatchDetailsVC/MSMatchDetailsViewController.m; sourceTree = "<group>"; };
+		0220C57A1C483DF2005CB538 /* MSMatchDetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSMatchDetailsTableViewCell.h; path = ViewControllers/MSMatchDetailsVC/Cells/MSMatchDetailsTableViewCell.h; sourceTree = "<group>"; };
+		0220C57B1C483DF2005CB538 /* MSMatchDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSMatchDetailsTableViewCell.m; path = ViewControllers/MSMatchDetailsVC/Cells/MSMatchDetailsTableViewCell.m; sourceTree = "<group>"; };
+		0220C57D1C483E25005CB538 /* MSMatchDetailsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSMatchDetailsTableViewCell.xib; path = ViewControllers/MSMatchDetailsVC/Cells/MSMatchDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		02D23F711C58F52300D663AB /* MSGoalRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSGoalRowController.h; sourceTree = "<group>"; };
+		02D23F721C58F52300D663AB /* MSGoalRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGoalRowController.m; sourceTree = "<group>"; };
 		5712F67E18E0953B009A0731 /* MSLoadingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLoadingTableViewCell.h; sourceTree = "<group>"; };
 		5712F67F18E0953B009A0731 /* MSLoadingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLoadingTableViewCell.m; sourceTree = "<group>"; };
 		5712F68118E09548009A0731 /* MSLoadingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSLoadingTableViewCell.xib; sourceTree = "<group>"; };
@@ -930,6 +944,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0220C5721C47D6C7005CB538 /* MSMatchDetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				0220C5791C483DBE005CB538 /* Cells */,
+				0220C5761C483D7A005CB538 /* MSMatchDetailsViewController.h */,
+				0220C5771C483D7A005CB538 /* MSMatchDetailsViewController.m */,
+			);
+			name = MSMatchDetailsVC;
+			sourceTree = "<group>";
+		};
+		0220C5791C483DBE005CB538 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0220C57A1C483DF2005CB538 /* MSMatchDetailsTableViewCell.h */,
+				0220C57D1C483E25005CB538 /* MSMatchDetailsTableViewCell.xib */,
+				0220C57B1C483DF2005CB538 /* MSMatchDetailsTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		36A1524217BA861A00F0308C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1363,6 +1397,7 @@
 		84D5FFF618A42B380018BAFE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0220C5721C47D6C7005CB538 /* MSMatchDetailsVC */,
 				576E2E6A18C8793200694544 /* MSImageRecognitionVC */,
 				841CB07518B4EED60033E13E /* MSPlayerDetailsVC */,
 				84045AD818B2507E00D3CCC6 /* MSLeagueDetailsVC */,
@@ -1506,6 +1541,8 @@
 				CD7FA3851ACD41BB005D2E2C /* MSMatchRowController.m */,
 				CD7FA38A1ACD4A56005D2E2C /* MSMatchEventRowController.h */,
 				CD7FA38B1ACD4A56005D2E2C /* MSMatchEventRowController.m */,
+				02D23F711C58F52300D663AB /* MSGoalRowController.h */,
+				02D23F721C58F52300D663AB /* MSGoalRowController.m */,
 			);
 			path = TableViewRowControllers;
 			sourceTree = "<group>";
@@ -2086,6 +2123,7 @@
 			files = (
 				57BEBC4F18EAEAF700B755C1 /* foto240x320_19.jpg in Resources */,
 				57BEBC4518EAEAF700B755C1 /* foto240x320_9.jpg in Resources */,
+				0220C57E1C483E25005CB538 /* MSMatchDetailsTableViewCell.xib in Resources */,
 				96595EB91A31EEDD006239B1 /* MSFilterView.xib in Resources */,
 				57BEBC4918EAEAF700B755C1 /* foto240x320_13.jpg in Resources */,
 				57BEBC4118EAEAF700B755C1 /* foto240x320_5.jpg in Resources */,
@@ -2169,6 +2207,8 @@
 				CD7FA6B41ACEAF63005D2E2C /* Info.plist in Resources */,
 				CD7FA3891ACD44EE005D2E2C /* DB_JSON.txt in Resources */,
 				CD8B3BF01AC58AB50013862E /* FlagRecognition WatchKit App.app in Resources */,
+				02078E8A1C6B876300D8F9F6 /* Images.xcassets in Resources */,
+				0236FA5F1C5FD78E00FB6284 /* Interface.storyboard in Resources */,
 				CD8B3BEC1AC58AB50013862E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2255,6 +2295,7 @@
 				0220C55A1C46B468005CB538 /* _MSEvent.m in Sources */,
 				CD7FA6741ACEAF63005D2E2C /* NSString+MagicalDataImport.m in Sources */,
 				CD7FA68C1ACEAF63005D2E2C /* NSManagedObjectContext+MagicalSaves.m in Sources */,
+				0220C5781C483D7A005CB538 /* MSMatchDetailsViewController.m in Sources */,
 				CD7FA65F1ACEAF63005D2E2C /* UIWebView+AFNetworking.m in Sources */,
 				96595EB71A31EECC006239B1 /* MSFilterView.m in Sources */,
 				CD7FA69E1ACEAF63005D2E2C /* MagicalRecord+ErrorHandling.m in Sources */,
@@ -2311,6 +2352,7 @@
 				841CB07818B4F81E0033E13E /* MSPlayerDetailsViewController.m in Sources */,
 				CD7FA6A41ACEAF63005D2E2C /* MagicalRecord+Options.m in Sources */,
 				5727695218D8717B00CCDFB5 /* MSLeaguesCollectionViewController.m in Sources */,
+				0220C57C1C483DF2005CB538 /* MSMatchDetailsTableViewCell.m in Sources */,
 				9603A87F1A3F45F3001FFDDE /* HMSegmentedControl.m in Sources */,
 				0220C55D1C46B468005CB538 /* _MSLeague.m in Sources */,
 				CD7FA6621ACEAF63005D2E2C /* MagicalImportFunctions.m in Sources */,
@@ -2346,11 +2388,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0236FA611C62550200FB6284 /* MSColorScheme.m in Sources */,
 				CD7FA6B11ACEAF63005D2E2C /* MSSettings.m in Sources */,
 				CD7FA6871ACEAF63005D2E2C /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				CD7FA3831ACD4196005D2E2C /* NotificationController.m in Sources */,
 				CD7FA6A51ACEAF63005D2E2C /* MagicalRecord+Options.m in Sources */,
 				CD7FA5FD1ACEAF63005D2E2C /* MSMatch.m in Sources */,
+				02D23F731C58F52300D663AB /* MSGoalRowController.m in Sources */,
 				CD7FA6601ACEAF63005D2E2C /* UIWebView+AFNetworking.m in Sources */,
 				CD7FA6331ACEAF63005D2E2C /* AFHTTPRequestOperationManager.m in Sources */,
 				0220C56A1C46B468005CB538 /* _MSPlayer.m in Sources */,
@@ -2620,7 +2664,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = FlagsRecognizer.entitlements;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2631,6 +2675,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/FlagRecognition-Prefix.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "IS_NOT_EXT=1";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/**",
@@ -2667,7 +2712,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = FlagsRecognizer.entitlements;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2678,6 +2723,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/FlagRecognition-Prefix.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "IS_NOT_EXT=1";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/**",
@@ -2748,7 +2794,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a445db7f-116c-4e67-8912-f4f0af432493";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -2776,7 +2822,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a445db7f-116c-4e67-8912-f4f0af432493";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -2878,7 +2924,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = TodayExtension;
-				PROVISIONING_PROFILE = "de1f14c5-9150-412b-bb3a-e3a2868cfd2b";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "de1f14c5-9150-412b-bb3a-e3a2868cfd2b";
 				SKIP_INSTALL = YES;
 			};
@@ -2911,7 +2957,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = TodayExtension;
-				PROVISIONING_PROFILE = "de1f14c5-9150-412b-bb3a-e3a2868cfd2b";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "de1f14c5-9150-412b-bb3a-e3a2868cfd2b";
 				SKIP_INSTALL = YES;
 			};

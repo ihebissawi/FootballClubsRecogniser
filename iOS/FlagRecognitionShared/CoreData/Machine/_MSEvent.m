@@ -4,6 +4,8 @@
 #import "_MSEvent.h"
 
 const struct MSEventAttributes MSEventAttributes = {
+	.authorName = @"authorName",
+	.eventDescription = @"eventDescription",
 	.eventType = @"eventType",
 	.iD = @"iD",
 	.matchID = @"matchID",
@@ -50,14 +52,13 @@ const struct MSEventRelationships MSEventRelationships = {
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
 		return keyPaths;
 	}
-	if ([key isEqualToString:@"time_minuteValue"]) {
-		NSSet *affectingKey = [NSSet setWithObject:@"time_minute"];
-		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
-		return keyPaths;
-	}
 
 	return keyPaths;
 }
+
+@dynamic authorName;
+
+@dynamic eventDescription;
 
 @dynamic eventType;
 
@@ -90,24 +91,6 @@ const struct MSEventRelationships MSEventRelationships = {
 @dynamic teamID;
 
 @dynamic time_minute;
-
-- (int16_t)time_minuteValue {
-	NSNumber *result = [self time_minute];
-	return [result shortValue];
-}
-
-- (void)setTime_minuteValue:(int16_t)value_ {
-	[self setTime_minute:[NSNumber numberWithShort:value_]];
-}
-
-- (int16_t)primitiveTime_minuteValue {
-	NSNumber *result = [self primitiveTime_minute];
-	return [result shortValue];
-}
-
-- (void)setPrimitiveTime_minuteValue:(int16_t)value_ {
-	[self setPrimitiveTime_minute:[NSNumber numberWithShort:value_]];
-}
 
 @dynamic match;
 

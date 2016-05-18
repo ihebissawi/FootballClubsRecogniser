@@ -202,12 +202,14 @@ static  NSString const *correctColorKey = @"";
     CGFloat darknessScore = (((componentColors[0]*255) * 299) + ((componentColors[1]*255) * 587) + ((componentColors[2]*255) * 114)) / 1000;
     
     if (darknessScore >= 125) {
+    #ifdef IS_NOT_EXT
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
-        
+    #endif
         return [UIColor blackColor];
     }
-    
+    #ifdef IS_NOT_EXT
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    #endif
     return [UIColor whiteColor];
 }
 

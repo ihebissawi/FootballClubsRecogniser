@@ -9,6 +9,9 @@
 #import "_MSEvent.h"
 
 @interface MSEvent : _MSEvent
-- (void)foo;
-// Custom logic goes here.
+
+- (NSString *)eventTitle;
+- (NSString *)eventHumanDescription;
+- (NSString *)eventTime;
+
 @end

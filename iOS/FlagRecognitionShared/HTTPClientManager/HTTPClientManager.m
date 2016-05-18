@@ -534,6 +534,31 @@ NSString * const kHTTPClientManagerReachabilityStateChangedNotification = @"kHTT
 	 }];
 }
 
+- (void)requestActualMatchesForFavoriteTeamsWithCompletion:(MSCompletionBlockWithData)completion
+{
+    NSString *path = [NSString stringWithFormat:@"/api/teamactualmatchesinfo/user/%@", self.userId];
+    
+    [self GET:path
+   parameters:nil
+      success:
+     ^(NSURLSessionDataTask *task, id matchesJSON)
+     {
+         NSArray *matches = nil;
+         id data = matchesJSON[@"data"];
+         if ([data isKindOfClass:[NSDictionary class]])
+             data = [data allValues];
+         if (matchesJSON)
+             matches = [MSMatch MR_importFromArray:data];
+         
+         performCompletionBlockWithData(completion, YES, nil, matches);
+     }
+      failure:
+     ^(NSURLSessionDataTask *task, NSError *error)
+     {
+         performCompletionBlockWithData(completion, NO, error, nil);
+     }];
+}
+
 #pragma mark - Image Request
 
 - (void) teamImageWithTeam : (NSString *) teamName completion:(void (^)(UIImage *)) callback {

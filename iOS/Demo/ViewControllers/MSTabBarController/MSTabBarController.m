@@ -116,7 +116,7 @@
     //[self setDefaultColorScheme];
 }
 
-#pragma mark - private
+#pragma mark - pdrivate
 
 - (void)setDefaultColorScheme {
     [(MSNavigationController *)self.selectedViewController updateColorScheme:self.colorScheme];
@@ -149,6 +149,8 @@
     return image;
 }
 
-
+- (void)popAllControllers{
+    [((MSNavigationController *)self.viewControllers[self.selectedIndex]) popToRootViewControllerAnimated:NO];
+}
 
 @end

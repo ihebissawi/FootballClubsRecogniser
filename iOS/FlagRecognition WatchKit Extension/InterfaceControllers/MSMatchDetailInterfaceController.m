@@ -7,30 +7,45 @@
 //
 
 #import "MSMatchDetailInterfaceController.h"
-
+#import "MSMatch.h"
+#import "MSTeam.h"
+#import "MSEvent.h"
+#import "MSGoalRowController.h"
 
 @interface MSMatchDetailInterfaceController()
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *matchTitle;
-@property (nonatomic, strong) NSArray *matchEvents;
+@property (nonatomic, strong) NSArray *goalEvents;
+@property (nonatomic, strong) MSMatch * currentMatch;
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceTable *tableView;
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *scoreLabel;
 
 @end
 
-
 @implementation MSMatchDetailInterfaceController
 
-
+/*
+- (instancetype)init{
+    self = [super init];
+    [self setTitle:@"<Matches"];
+    return self;
+}
+*/
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
-    
     // Configure interface objects here.
+    self.currentMatch = context;
+    [self.matchTitle setText:[[NSString alloc] initWithFormat:@"%@ vs %@",[self.currentMatch.teamHome shortNameOrName], [self.currentMatch.teamAway shortNameOrName]]];
+    [self.scoreLabel setText:[self.currentMatch humanScore]];
     
-    NSDictionary *contextDict = (NSDictionary *)context;
-    if (contextDict) {
-        self.matchTitle = [contextDict valueForKey:@"matchTitle"];
-        
-        if([contextDict valueForKey:@"matchEvents"]) {
-            self.matchEvents = [contextDict valueForKey:@"matchEvents"];
+    self.goalEvents = [self.currentMatch goalEvents];
+    if([self.goalEvents count] > 0){
+        [self.tableView setNumberOfRows:[self.goalEvents count] withRowType:@"GoalRow"];
+        for(NSInteger i = 0; i < [self.goalEvents count]; i++){
+            BOOL isLeftComand = [((MSEvent *)self.goalEvents[i]).teamID isEqualToString:self.currentMatch.teamHomeID] ? YES : NO;
+            NSString * authorName = [((MSEvent *)self.goalEvents[i]).authorName length] == 0 ? @" - " : ((MSEvent *)self.goalEvents[i]).authorName;
+            MSGoalRowController * cell = [self.tableView rowControllerAtIndex:i];
+            [cell setAuthor:authorName time:((MSEvent *)self.goalEvents[i]).time_minute isLeftComand:isLeftComand];
         }
     }
 }
@@ -48,9 +63,7 @@
 
 #pragma mark - Segue
 -(id)contextForSegueWithIdentifier:(NSString *)segueIdentifier {
-    
-    return self.matchEvents;
-    
+    return self.goalEvents;
 }
 
 @end

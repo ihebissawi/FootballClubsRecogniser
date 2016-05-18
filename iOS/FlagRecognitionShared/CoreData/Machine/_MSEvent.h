@@ -4,6 +4,8 @@
 #import <CoreData/CoreData.h>
 
 extern const struct MSEventAttributes {
+	__unsafe_unretained NSString *authorName;
+	__unsafe_unretained NSString *eventDescription;
 	__unsafe_unretained NSString *eventType;
 	__unsafe_unretained NSString *iD;
 	__unsafe_unretained NSString *matchID;
@@ -31,6 +33,14 @@ extern const struct MSEventRelationships {
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
 @property (nonatomic, readonly, strong) MSEventID* objectID;
+
+@property (nonatomic, strong) NSString* authorName;
+
+//- (BOOL)validateAuthorName:(id*)value_ error:(NSError**)error_;
+
+@property (nonatomic, strong) NSString* eventDescription;
+
+//- (BOOL)validateEventDescription:(id*)value_ error:(NSError**)error_;
 
 @property (nonatomic, strong) NSNumber* eventType;
 
@@ -60,11 +70,7 @@ extern const struct MSEventRelationships {
 
 //- (BOOL)validateTeamID:(id*)value_ error:(NSError**)error_;
 
-@property (nonatomic, strong) NSNumber* time_minute;
-
-@property (atomic) int16_t time_minuteValue;
-- (int16_t)time_minuteValue;
-- (void)setTime_minuteValue:(int16_t)value_;
+@property (nonatomic, strong) NSString* time_minute;
 
 //- (BOOL)validateTime_minute:(id*)value_ error:(NSError**)error_;
 
@@ -83,6 +89,12 @@ extern const struct MSEventRelationships {
 @end
 
 @interface _MSEvent (CoreDataGeneratedPrimitiveAccessors)
+
+- (NSString*)primitiveAuthorName;
+- (void)setPrimitiveAuthorName:(NSString*)value;
+
+- (NSString*)primitiveEventDescription;
+- (void)setPrimitiveEventDescription:(NSString*)value;
 
 - (NSNumber*)primitiveEventType;
 - (void)setPrimitiveEventType:(NSNumber*)value;
@@ -105,11 +117,8 @@ extern const struct MSEventRelationships {
 - (NSString*)primitiveTeamID;
 - (void)setPrimitiveTeamID:(NSString*)value;
 
-- (NSNumber*)primitiveTime_minute;
-- (void)setPrimitiveTime_minute:(NSNumber*)value;
-
-- (int16_t)primitiveTime_minuteValue;
-- (void)setPrimitiveTime_minuteValue:(int16_t)value_;
+- (NSString*)primitiveTime_minute;
+- (void)setPrimitiveTime_minute:(NSString*)value;
 
 - (MSMatch*)primitiveMatch;
 - (void)setPrimitiveMatch:(MSMatch*)value;

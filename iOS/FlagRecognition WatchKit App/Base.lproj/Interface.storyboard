@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <mutableArray key="OpenSans-SemiBold.ttf">
-            <string>OpenSans-Semibold</string>
-        </mutableArray>
-    </customFonts>
     <scenes>
         <!--Matches Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" userLabel="Matches Interface Controller" customClass="MSMatchInterfaceController">
+                <controller title="Matches" id="AgC-eL-Hgc" userLabel="Matches Interface Controller" customClass="MSMatchInterfaceController">
                     <items>
+                        <group width="1" alignment="left" hidden="YES" id="1LD-iQ-QJz">
+                            <items>
+                                <label alignment="center" text="No favoutite teams selected" textAlignment="center" numberOfLines="2" id="ckD-5g-xIy"/>
+                            </items>
+                        </group>
                         <table alignment="left" id="e5t-I7-E64">
                             <items>
                                 <tableRow identifier="MatchRow" id="6Y5-J6-fZD" customClass="MSMatchRowController">
@@ -36,16 +36,13 @@
                                                 </items>
                                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                             </group>
-                                            <label width="30" alignment="left" text="21:45" id="3bs-rc-kOy">
+                                            <label width="60" alignment="left" text="21:45" textAlignment="right" id="3bs-rc-kOy">
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="font" type="system" pointSize="10"/>
                                             </label>
                                         </items>
                                         <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
-                                        <edgeInsets key="margins" left="4" right="0.0" top="3" bottom="3"/>
-                                        <connections>
-                                            <segue destination="zVk-up-WDw" kind="modal" id="Qlh-u2-QVo"/>
-                                        </connections>
+                                        <edgeInsets key="margins" left="4" right="6" top="3" bottom="3"/>
                                     </group>
                                     <connections>
                                         <outlet property="stateGroup" destination="GJP-7I-jUb" id="ISg-Zw-ZLw"/>
@@ -57,9 +54,10 @@
                             </items>
                         </table>
                     </items>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="matchesTable" destination="e5t-I7-E64" id="4Dw-Th-2Jp"/>
+                        <outlet property="noResultsGroup" destination="1LD-iQ-QJz" id="vQE-Jz-czf"/>
                     </connections>
                 </controller>
             </objects>
@@ -70,55 +68,74 @@
             <objects>
                 <controller identifier="Match Details" id="zVk-up-WDw" userLabel="Match Detail Interface Controller" customClass="MSMatchDetailInterfaceController">
                     <items>
-                        <group width="1" height="1" alignment="left" layout="vertical" id="KGh-8V-xfO">
+                        <group width="1" alignment="left" radius="0.0" id="UZm-d0-b43">
                             <items>
-                                <group width="1" alignment="left" layout="vertical" id="Soq-fi-6Go">
-                                    <items>
-                                        <label width="1" alignment="left" text="ARS vs CHE" textAlignment="center" id="QX3-UL-2Mj"/>
-                                    </items>
-                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </group>
-                                <label width="1" alignment="left" text="1 : 1" textAlignment="center" id="tpq-ZP-he5">
+                                <label width="1" alignment="center" text="ARS vs CHE" textAlignment="center" id="QX3-UL-2Mj">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </group>
+                        <group width="1" height="66" alignment="left" layout="vertical" radius="0.0" id="KGh-8V-xfO">
+                            <items>
+                                <label width="1" alignment="center" text="1 : 1" textAlignment="center" id="tpq-ZP-he5">
                                     <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="font" type="boldSystem" pointSize="31"/>
                                 </label>
-                                <dateLabel width="1" alignment="left" textAlignment="center" format="h:mm" id="mNK-Ym-yVr">
+                                <dateLabel width="1" alignment="center" textAlignment="center" format="h:mm" id="mNK-Ym-yVr">
                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="font" type="system" pointSize="14"/>
                                 </dateLabel>
-                                <group width="1" height="1" alignment="left" id="f1F-7E-b2b">
-                                    <items>
-                                        <label width="65" alignment="left" text="Sanchez 43'" id="Dng-2F-Fqc">
-                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <fontDescription key="font" type="system" pointSize="11"/>
-                                        </label>
-                                        <group width="2" height="1" alignment="left" radius="0.0" id="f8A-TO-XC2">
-                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        </group>
-                                        <label width="60" alignment="left" text="Drogba 38'" textAlignment="right" id="XUY-k3-BIf">
-                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <fontDescription key="font" type="system" pointSize="11"/>
-                                        </label>
-                                    </items>
-                                </group>
                             </items>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </group>
+                        <table alignment="center" spacing="0.0" id="xbl-LL-6MU">
+                            <items>
+                                <tableRow identifier="GoalRow" id="nkd-gI-2lM" customClass="MSGoalRowController">
+                                    <group key="rootItem" width="1" height="28" alignment="left" semanticContentAttribute="spatial" id="MBj-MT-jZd">
+                                        <items>
+                                            <label width="50" height="37" alignment="left" verticalAlignment="center" text="hero1" textAlignment="right" numberOfLines="2" minimumScaleFactor="0.5" id="Yky-nt-hhh">
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="font" type="system" pointSize="11"/>
+                                            </label>
+                                            <label alignment="center" verticalAlignment="center" text="45'" textAlignment="center" baselineAdjustment="alignCenters" minimumScaleFactor="0.5" id="siV-iN-gY4">
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="font" type="boldSystem" pointSize="23"/>
+                                            </label>
+                                            <label width="47" height="41.5" alignment="right" verticalAlignment="center" text="hero2" textAlignment="left" numberOfLines="2" minimumScaleFactor="0.5" id="Ryp-87-ktU">
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="font" type="system" pointSize="11"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="leftTeamLabel" destination="Yky-nt-hhh" id="UJF-9I-tbf"/>
+                                        <outlet property="rightTeamLabel" destination="Ryp-87-ktU" id="b1B-PG-Nhc"/>
+                                        <outlet property="timeLabel" destination="siV-iN-gY4" id="wap-gP-wZe"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </table>
                     </items>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                     <connections>
                         <outlet property="matchTitle" destination="QX3-UL-2Mj" id="eWe-Pj-IDW"/>
+                        <outlet property="scoreLabel" destination="tpq-ZP-he5" id="gGn-2h-7pt"/>
+                        <outlet property="tableView" destination="xbl-LL-6MU" id="Jaw-Fp-22X"/>
                         <segue destination="Rfe-bX-Qjb" kind="relationship" relationship="nextPage" id="Loa-UG-W3H"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="468" y="331"/>
         </scene>
         <!--Match Events Interface Controller-->
         <scene sceneID="lTM-ZX-RVF">
             <objects>
-                <controller id="Rfe-bX-Qjb" userLabel="Match Events Interface Controller" customClass="MSMatchEventsInterfaceController">
+                <controller identifier="Match Events" id="Rfe-bX-Qjb" userLabel="Match Events Interface Controller" customClass="MSMatchEventsInterfaceController">
                     <items>
-                        <group width="1" height="1" alignment="left" layout="vertical" id="UbJ-ip-qLv">
+                        <group width="1" height="19" alignment="left" layout="vertical" id="UbJ-ip-qLv">
                             <items>
                                 <group width="1" alignment="left" layout="vertical" id="Ppi-LR-zPz">
                                     <items>
@@ -126,52 +143,56 @@
                                     </items>
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </group>
-                                <table alignment="left" id="ihl-YK-GUl">
-                                    <items>
-                                        <tableRow identifier="EventCell" id="jIm-fu-UiN" customClass="MSMatchEventRowController">
-                                            <group key="rootItem" width="1" height="67" alignment="left" id="Ola-bF-Md6">
-                                                <items>
-                                                    <group width="6" height="1" alignment="left" radius="3" id="sCH-ZV-g1H">
-                                                        <color key="backgroundColor" red="0.98823529409999999" green="0.0" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </group>
-                                                    <group width="1" height="1" alignment="left" layout="vertical" id="IvK-Rv-N1o">
-                                                        <items>
-                                                            <group width="1" alignment="left" id="yXZ-VQ-xbJ">
-                                                                <items>
-                                                                    <label width="99" alignment="left" text="Goal" id="zOd-5n-RQY">
-                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    </label>
-                                                                    <label alignment="left" text="45'" id="AcQ-A0-nCN">
-                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    </label>
-                                                                </items>
-                                                            </group>
-                                                            <label width="1" alignment="left" text="Alexis Sanchez have reached Chelsea's gates." numberOfLines="2" minimumScaleFactor="0.50000000000000011" id="8fR-AL-bBz">
-                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                                <fontDescription key="font" name="OpenSans-Semibold" family="Open Sans" pointSize="10"/>
-                                                            </label>
-                                                        </items>
-                                                    </group>
-                                                </items>
-                                                <edgeInsets key="margins" left="2" right="4" top="4" bottom="4"/>
-                                            </group>
-                                            <connections>
-                                                <outlet property="eventLabel" destination="8fR-AL-bBz" id="0Py-x4-Gba"/>
-                                                <outlet property="eventNameLabel" destination="zOd-5n-RQY" id="vrc-vy-P4j"/>
-                                                <outlet property="stateGroup" destination="sCH-ZV-g1H" id="0aj-ac-oWi"/>
-                                                <outlet property="timeLabel" destination="AcQ-A0-nCN" id="Vkb-fS-icD"/>
-                                            </connections>
-                                        </tableRow>
-                                    </items>
-                                    <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
-                                </table>
                             </items>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </group>
+                        <table alignment="left" id="ihl-YK-GUl">
+                            <items>
+                                <tableRow identifier="EventCell" selectable="NO" id="jIm-fu-UiN" customClass="MSMatchEventRowController">
+                                    <group key="rootItem" width="1" height="67" alignment="left" id="Ola-bF-Md6">
+                                        <items>
+                                            <group width="6" height="1" alignment="left" radius="3" id="sCH-ZV-g1H">
+                                                <color key="backgroundColor" red="0.98823529409999999" green="0.0" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </group>
+                                            <group width="1" height="1" alignment="left" layout="vertical" id="IvK-Rv-N1o">
+                                                <items>
+                                                    <group width="1" alignment="left" id="yXZ-VQ-xbJ">
+                                                        <items>
+                                                            <label width="99" alignment="left" text="Goal" id="zOd-5n-RQY">
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </label>
+                                                            <label alignment="left" text="45'" id="AcQ-A0-nCN">
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                    <label width="119" alignment="left" text="Alexis Sanchez have reached Chelsea's gates." numberOfLines="3" minimumScaleFactor="0.50000000000000011" id="8fR-AL-bBz">
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="font" type="system" pointSize="10"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <edgeInsets key="margins" left="2" right="4" top="4" bottom="4"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="eventLabel" destination="8fR-AL-bBz" id="0Py-x4-Gba"/>
+                                        <outlet property="eventNameLabel" destination="zOd-5n-RQY" id="vrc-vy-P4j"/>
+                                        <outlet property="stateGroup" destination="sCH-ZV-g1H" id="0aj-ac-oWi"/>
+                                        <outlet property="timeLabel" destination="AcQ-A0-nCN" id="Vkb-fS-icD"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </table>
                     </items>
+                    <connections>
+                        <outlet property="matchName" destination="A8e-Id-vPF" id="Kyl-1E-IlE"/>
+                        <outlet property="tableView" destination="ihl-YK-GUl" id="PEx-rD-GgS"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="700" y="345"/>
+            <point key="canvasLocation" x="700" y="311"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -197,4 +218,5 @@
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

@@ -9,5 +9,4 @@
 - (UIImage *)logoImage;
 - (NSArray *)players;
 - (MSShowableData *) viewObject;
-
 @end

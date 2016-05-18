@@ -212,6 +212,10 @@ static NSString * const kImageRecognitionSegueIdentifier = @"presentImageRecogni
 	return nil;
 }
 
+- (void)navigateToMatchDetailsWithId:(NSString *)matchId{
+
+}
+
 #pragma mark - IBActions
 
 - (IBAction)didTapOpenScannerButton:(id)sender {

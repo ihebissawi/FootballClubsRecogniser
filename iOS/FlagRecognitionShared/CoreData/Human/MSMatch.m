@@ -4,6 +4,8 @@
 
 #import "NSDate+MSExtensions.h"
 
+#import "MSEvent.h"
+
 @interface MSMatch ()
 
 // Private interface goes here.
@@ -54,8 +56,42 @@
     return newEntity;
 }
 
+- (void)shouldImportMatchEvents:(id)data{
+    for(MSEvent * eventToDelete in self.matchEvents){
+        [self.managedObjectContext deleteObject:eventToDelete];
+    }
+    
+    for(NSDictionary * eventDitionary in data){
+        MSEvent * newEvent = [MSEvent insertInManagedObjectContext:self.managedObjectContext];
+        newEvent.eventType = [NSNumber numberWithInteger: [eventDitionary[@"event_type"] integerValue]];
+        newEvent.authorName = eventDitionary[@"event_author"];
+        newEvent.teamID = eventDitionary[@"team_id"];
+        newEvent.time_minute = eventDitionary[@"time_minute"];
+        newEvent.score = eventDitionary[@"score"];
+        newEvent.eventDescription = eventDitionary[@"alert_message"];
+        [self addMatchEventsObject:newEvent];
+        
+        MSTeam * team = [MSTeam MR_findFirstByAttribute:@"iD" withValue:eventDitionary[@"team_id"] inContext:self.managedObjectContext];
+        if(team){
+            [newEvent setTeam:team];
+        }
+    }
+    
+    NSError * error = nil;
+    [self.managedObjectContext save:&error];
+    if(error){
+        NSLog(@"Error on saving match event: %@",error.localizedDescription);
+    }
+}
+
+
 - (BOOL)notFinished
 {
+    if(self.score.length == 0){
+        return YES;
+    }
+    return NO;
+    
     if (self.score.length)
 	{
         NSRange substringRange = [self.score rangeOfString:@":"];
@@ -79,10 +115,35 @@
         return nil;
     }
     
-    NSArray *events = [self.matchEvents allObjects];
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"eventType IN {1,2,3,4} AND match = %@",self];
+    NSFetchRequest * request = [MSEvent MR_requestAllSortedBy:@"time_minute" ascending:NO];
+    [request setPredicate:predicate];
+    NSArray * events = [MSEvent MR_executeFetchRequest:request inContext:self.managedObjectContext];
     return events;
-    
 }
 
+- (NSArray *)goalEvents {
+    if (!self.matchEvents.count) {
+        return nil;
+    }
+    
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"eventType = 1 AND match = %@",self];
+    NSFetchRequest * request = [MSEvent MR_requestAllSortedBy:@"time_minute" ascending:NO];
+    [request setPredicate:predicate];
+    NSArray * events = [MSEvent MR_executeFetchRequest:request inContext:self.managedObjectContext];
+    return events;
+}
+- (NSString *)humanScore{
+    if([self.score length] > 0){
+        return self.score;
+    }
+    else{
+        return @"-";
+    }
+}
+
++ (instancetype)matchWithId:(NSString *)matchId{
+    return [MSMatch MR_findFirstByAttribute:@"iD" withValue:matchId];
+}
 
 @end

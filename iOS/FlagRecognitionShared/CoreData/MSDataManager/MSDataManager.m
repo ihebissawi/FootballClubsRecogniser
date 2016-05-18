@@ -411,7 +411,7 @@
 //		performCompletionBlockWithData(completion, YES, nil, resultArray);
 //	}
 //	else {
-		[self.httpClient requestLastMatchesForFavoriteTeamsWithCompletion:
+		[self.httpClient requestActualMatchesForFavoriteTeamsWithCompletion:
 		 ^(BOOL success, NSError *error, id data)
 		 {
 			 if (success)
@@ -428,6 +428,11 @@
 //	}
 }
 
+- (void)requestEventsForMatch:(MSMatch *)match
+        forceUpdateFromServer:(BOOL)forceUpdateFromServer
+               withCompletion:(MSCompletionBlockWithData)completion{
+
+}
 
 #pragma mark - Notification
 

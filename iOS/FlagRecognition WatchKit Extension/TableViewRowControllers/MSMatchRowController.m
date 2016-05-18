@@ -24,20 +24,17 @@
 
 -(void)setMatch:(MSMatch *)match
 {
-	UIColor *color = match.notFinished ? [UIColor redColor] : [UIColor lightGrayColor];
+	UIColor *color = [match.matchStatus isEqualToString:@"live"] ? [UIColor redColor] : [UIColor lightGrayColor];
 	[self.stateGroup setBackgroundColor:color];
 	
-
-	if (match.teamHome.shortName != nil && match.teamHome.shortName.length > 0)
-		[self.teamHomeLabel setText:match.teamHome.shortName];
-	else
-		[self.teamHomeLabel setText:match.teamHomeName];
-		
-	if (match.teamAway.shortName != nil && match.teamAway.shortName.length > 0)
-		[self.teamAwayLabel setText:match.teamAway.shortName];
-	else
-		[self.teamAwayLabel setText:match.teamAwayName];
-
+    [self.teamHomeLabel setText:[match.teamHome shortNameOrName]];
+    [self.teamAwayLabel setText:[match.teamAway shortNameOrName]];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"dd MMM"];
+    NSString * formattedDateString = [dateFormatter stringFromDate:match.date];
+    self.timeLabel.text = formattedDateString;
+    /*
 	if (match.notFinished)
 	{
 		NSUInteger minutes = floor(fabs([match.date timeIntervalSinceNow] / 60.0));
@@ -46,11 +43,16 @@
 			self.timeLabel.text = [NSString stringWithFormat:@"%ld'",minutes];
 			self.timeLabel.hidden = NO;
 		}
-		else
-			self.timeLabel.hidden = YES;
+        else{
+            NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+            [dateFormatter setDateFormat:@"dd MMM"];
+            NSString * formattedDateString = [dateFormatter stringFromDate:match.date];
+            self.timeLabel.text = formattedDateString;
+        }
 	}
 	else
 		self.timeLabel.hidden = YES;
+     */
 }
 
 @end

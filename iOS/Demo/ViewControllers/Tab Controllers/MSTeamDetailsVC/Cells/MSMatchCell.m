@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *awayTeamLeagueLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *homeTeamDigitsImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *awayTeamDigitImageView;
+@property (weak, nonatomic) IBOutlet UIView *scoreView;
 
 @end
 
@@ -47,6 +48,9 @@
 
     self.dateLabel.font = [UIFont fontWithName:@"OpenSans" size:10];
     self.scoreLabel.font = [UIFont fontWithName:@"OpenSans" size:24];
+    
+    UITapGestureRecognizer * tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapMatchDetailsButton:)];
+    [self.scoreView addGestureRecognizer:tapRecognizer];
 }
 
 - (NSString *)shortNameForTeamWithID:(NSString *)teamID {
@@ -127,6 +131,10 @@
 
 - (IBAction)didTapHomeButton:(id)sender {
     performButtonHandleBlockWithData(self.didTapTeamInfoButton, sender, ((MSMatch *)self.source).teamHomeID);
+}
+
+- (void)didTapMatchDetailsButton:(id)sender{
+    performButtonHandleBlockWithData(self.didTapMatchDetailsButton, sender, (MSMatch *)self.source);
 }
 
 @end

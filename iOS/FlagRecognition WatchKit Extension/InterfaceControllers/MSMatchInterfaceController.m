@@ -18,6 +18,8 @@
 #import "MSMatch.h"
 #import "MSTeam.h"
 
+#import "MSMatchDetailInterfaceController.h"
+
 
 @interface MSMatchInterfaceController()
 
@@ -25,6 +27,7 @@
 @property (nonatomic,strong) NSArray *contentArray;
 
 @property (nonatomic,weak) IBOutlet WKInterfaceTable *matchesTable;
+@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceGroup *noResultsGroup;
 
 @end
 
@@ -54,16 +57,20 @@
 			  ^(BOOL success, NSError *error, id data)
 			  {
 				  self.contentArray = data;
-				  
-				  [self.matchesTable setNumberOfRows:self.contentArray.count withRowType:@"MatchRow"];
-				  
-				  NSUInteger index = 0;
-				  for (MSMatch *match in self.contentArray)
-				  {
-					  MSMatchRowController *row = [self.matchesTable rowControllerAtIndex:index];
-					  [row setMatch:match];
-					  index++;
-				  }
+                  if([self.contentArray count] == 0){
+                      [self.noResultsGroup setHidden:NO];
+                  }
+                  else{
+                      [self.matchesTable setNumberOfRows:self.contentArray.count withRowType:@"MatchRow"];
+                      
+                      NSUInteger index = 0;
+                      for (MSMatch *match in self.contentArray)
+                      {
+                          MSMatchRowController *row = [self.matchesTable rowControllerAtIndex:index];
+                          [row setMatch:match];
+                          index++;
+                      }
+                  }
 			  }];
 		 }
 		 else
@@ -87,8 +94,8 @@
     if (matchEvents) {
         [matchDictionary setObject:matchEvents forKey:@"matchEvents"];
     }
-    [self presentControllerWithName:@"Match Details"
-                            context:matchDictionary];
+    [self presentControllerWithNames:@[@"Match Details",@"Match Events"] contexts:@[selectedMatch,selectedMatch]];
+//    [self pushControllerWithName:@"Match Details" context:selectedMatch];
     
 }
 

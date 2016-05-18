@@ -16,6 +16,7 @@ const struct MSMatchAttributes MSMatchAttributes = {
 	.teamHomeID = @"teamHomeID",
 	.teamHomeName = @"teamHomeName",
 	.timestamp = @"timestamp",
+    .matchStatus = @"matchStatus"
 };
 
 const struct MSMatchRelationships MSMatchRelationships = {
@@ -80,6 +81,8 @@ const struct MSMatchUserInfo MSMatchUserInfo = {
 @dynamic teamHomeName;
 
 @dynamic timestamp;
+
+@dynamic matchStatus;
 
 @dynamic matchEvents;
 

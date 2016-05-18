@@ -54,6 +54,7 @@ extern NSString *const kHTTPClientManagerReachabilityStateChangedNotification;
 //
 //Extension
 - (void)requestLastMatchesForFavoriteTeamsWithCompletion:(MSCompletionBlockWithData)completion;
+- (void)requestActualMatchesForFavoriteTeamsWithCompletion:(MSCompletionBlockWithData)completion;
 
 @end
 

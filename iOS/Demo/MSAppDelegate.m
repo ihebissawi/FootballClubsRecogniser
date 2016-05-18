@@ -34,6 +34,14 @@
 #import "MSSettings.h"
 
 #import "Flurry.h"
+
+#import "MSMatchDetailsViewController.h"
+
+#import "MSMatch.h"
+
+#import "MSTabBarController.h"
+
+#import "MSTeamsTableViewController.h"
 //#define DEBUG_BUILD   
 
 @implementation MSAppDelegate
@@ -72,6 +80,7 @@
 		 else
 			 NSLog(@"%@",error.localizedDescription);
 	 }];
+    
     return YES;
 }
 
@@ -90,7 +99,35 @@
 
 -(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {
-    
+    if(application.applicationState == UIApplicationStateInactive || application.applicationState == UIApplicationStateBackground){
+        if(userInfo[@"matchId"]){
+            //Need to pop all view controllers
+            if([[[[UIApplication sharedApplication] keyWindow] rootViewController] isKindOfClass:[MSTabBarController class]]){
+                MSTabBarController * rootViewController = (MSTabBarController *)[[[UIApplication sharedApplication] keyWindow] rootViewController];
+                [rootViewController popAllControllers];
+                [rootViewController setSelectedIndex:0];
+                
+                MSTeamsTableViewController * teamViewController = rootViewController.viewControllers[0];
+                [teamViewController navigateToMatchDetailsWithId:userInfo[@"matchId"]];
+            }
+            /*
+            [[MSDataManager sharedManager] requestLastMatchesForFavoriteTeamsForceUpdateFromServer:YES withCompletion:^(BOOL success, NSError *error, id data) {
+                MSMatch * currentMatch = [MSMatch matchWithId:userInfo[@"matchId"]];
+                if(currentMatch){
+                    MSMatchDetailsViewController * matchController = [MSMatchDetailsViewController loadFromStoryBoard];
+                    matchController.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
+                                                                                                                     target:matchController
+                                                                                                                     action:@selector(dismissModal)];
+                    [matchController setSourceMatch:currentMatch];
+                    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:matchController animated:YES completion:^{
+                        
+                    }];
+                }
+            }];
+            */
+             
+        }
+    }
     NSLog(@"Received notification: %@", userInfo);
     
     if ([userInfo objectForKey:@"event_id"] != nil) {

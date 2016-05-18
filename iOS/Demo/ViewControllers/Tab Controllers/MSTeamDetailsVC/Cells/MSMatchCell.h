@@ -7,10 +7,13 @@
 //
 
 #import "MSTableViewCell.h"
+#import "MSMatch.h"
 
 @interface MSMatchCell : MSTableViewCell
 
 @property (copy, nonatomic) MSButtonHandleBlockWithData didTapTeamInfoButton;
+@property (copy, nonatomic) MSButtonHandleBlockWithData didTapMatchDetailsButton;
 @property (strong, nonatomic) NSString *userTeamID;
+@property (strong, nonatomic) MSMatch * sourceMatch;
 
 @end

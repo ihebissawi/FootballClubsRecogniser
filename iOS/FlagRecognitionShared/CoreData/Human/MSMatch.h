@@ -6,5 +6,9 @@
 - (NSDate *)date; //!!!: hours and minuts valid only for future matches
 - (BOOL)notFinished;
 - (NSArray *)events;
+- (NSArray *)goalEvents;
+- (NSString *)humanScore;
+
++ (instancetype)matchWithId:(NSString *)matchId;
 
 @end

@@ -10,6 +10,7 @@
 #import "MSEvent.h"
 #import "MSPlayer.h"
 #import "MSTeam.h"
+#import "MSColorScheme.h"
 
 typedef enum {
     MATCH_EVENT_NO_EVENT = 0,
@@ -33,7 +34,7 @@ typedef enum {
 -(void)setMatchEvent:(MSEvent *)matchEvent {
     
     if (matchEvent.time_minute !=nil) {
-        self.timeLabel.text = [NSString stringWithFormat:@"%d'",[matchEvent.time_minute integerValue]];
+        self.timeLabel.text = matchEvent.time_minute;
     }
     
     switch ([matchEvent.eventType integerValue]) {
@@ -53,7 +54,9 @@ typedef enum {
             break;
     }
     
-    self.eventLabel.text = [NSString stringWithFormat:@"%@, %@. Score: %@."];
+    [self.stateGroup setBackgroundColor: [MSColorScheme colorWithHexString:[matchEvent.team teamColorHex]]];
+    
+    self.eventLabel.text = matchEvent.eventDescription;
 
 }
 
